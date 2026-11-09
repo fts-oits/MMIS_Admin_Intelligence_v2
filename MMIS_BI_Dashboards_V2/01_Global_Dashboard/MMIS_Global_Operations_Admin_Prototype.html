@@ -33,13 +33,13 @@
 <header class="topbar"><div class="breadcrumb"><button class="btn small mobile-menu" type="button" id="mobile-nav">☰ Menu</button> <span>MMIS / Administration / <strong>Operations Dashboard</strong></span></div><div class="account"><span>♧ Notifications</span><span class="avatar" aria-hidden="true">AD</span><span class="account-label" id="account-label">SuperAdmin · Example User</span></div></header>
 <div class="banner"><span><strong>Design approval prototype.</strong> All numbers, Markets and statuses are invented examples. Controls demonstrate role/scope and navigation, not real MMIS operations.</span><button class="btn small" id="review-guide">Review guide</button></div>
 <main class="layout" id="overview">
+ <div class="page-title"><div><h1>Operations Dashboard</h1><p class="subtitle" id="welcome">What needs attention across your Markets right now.</p></div><div class="actions"><button class="btn" id="refresh">↻ Refresh view</button><button class="btn" data-route="/vendors/overview" data-title="Vendor Overview">Explore Vendor Insights ↗</button></div></div>
  <div class="controls" aria-label="Dashboard reporting context">
    <div class="field"><label for="role">Preview admin role</label><select id="role"><option value="super">SuperAdmin</option><option value="master">MarketMaster</option></select></div>
    <div class="field"><label for="market">Market</label><select id="market"><option value="all">All Markets</option><option value="a">Example Market A</option><option value="b">Example Market B</option></select></div>
    <div class="field"><label for="period">Rent reporting period</label><select id="period"><option value="month">Current month</option><option value="quarter">Last three months</option></select></div>
    <div class="meta"><span class="scope" id="scope-label">SuperAdmin · All Markets</span><span id="as-of">Demo reporting snapshot · Not live</span></div>
  </div>
- <div class="page-title"><div><h1>Operations Dashboard</h1><p class="subtitle" id="welcome">What needs attention across your Markets right now.</p></div><div class="actions"><button class="btn" id="refresh">↻ Refresh view</button><button class="btn" data-route="/vendors/overview" data-title="Vendor Overview">Explore Vendor Insights ↗</button></div></div>
  <section class="kpis" id="kpis" aria-label="Key operating metrics"></section>
  <div class="contentgrid">
    <section class="panel" id="needs-attention"><div class="section-h"><div><h2>Needs Your Attention</h2><p>Prioritized work that requires an administrator's review.</p></div><span class="tag warm" id="queue-badge">Illustrative queues</span></div><div id="queue"></div><p class="explain">Different queues can relate to the same Vendor or invoice. Queue counts represent work items, not distinct Vendors.</p></section>

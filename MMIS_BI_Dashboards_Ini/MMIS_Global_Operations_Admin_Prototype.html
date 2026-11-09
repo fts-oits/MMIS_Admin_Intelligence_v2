@@ -47,12 +47,6 @@
 </header>
 <div class="banner"><span><strong>Design approval prototype.</strong> All numbers, Markets and statuses are invented examples. Controls demonstrate role/scope and navigation, not real MMIS operations.</span><button class="btn small" id="review-guide">Review guide</button></div>
 <main class="layout" id="overview">
- <div class="controls" aria-label="Dashboard reporting context">
-   <div class="field"><label for="role">Preview admin role</label><select id="role"><option value="super">SuperAdmin</option><option value="master">MarketMaster</option></select></div>
-   <div class="field"><label for="market">Market</label><select id="market"><option value="all">All Markets</option><option value="a">Example Market A</option><option value="b">Example Market B</option></select></div>
-   <div class="field"><label for="period">Rent reporting period</label><select id="period"><option value="month">Current month</option><option value="quarter">Last three months</option></select></div>
-   <div class="meta"><span class="scope" id="scope-label">SuperAdmin · All Markets</span><span id="as-of">Demo reporting snapshot · Not live</span></div>
- </div>
  <div class="page-title">
    <div>
      <h1>Operations Dashboard</h1>
@@ -63,6 +57,12 @@
      <a class="btn primary" href="MMIS_Vendor_Facility_Interactive_Prototype.html?page=vendor" id="hero-vendor-link" data-route="/vendors/overview" data-title="Vendor Overview">Explore Vendor Insights ↗</a>
      <a class="btn" href="MMIS_Vendor_Facility_Interactive_Prototype.html?page=facility" id="hero-facility-link" data-route="/shops/insights" data-title="Facility Intelligence">Facility Intelligence ↗</a>
    </div>
+ </div>
+ <div class="controls" aria-label="Dashboard reporting context">
+   <div class="field"><label for="role">Preview admin role</label><select id="role"><option value="super">SuperAdmin</option><option value="master">MarketMaster</option></select></div>
+   <div class="field"><label for="market">Market</label><select id="market"><option value="all">All Markets</option><option value="a">Example Market A</option><option value="b">Example Market B</option></select></div>
+   <div class="field"><label for="period">Rent reporting period</label><select id="period"><option value="month">Current month</option><option value="quarter">Last three months</option></select></div>
+   <div class="meta"><span class="scope" id="scope-label">SuperAdmin · All Markets</span><span id="as-of">Demo reporting snapshot · Not live</span></div>
  </div>
  <section class="kpis" id="kpis" aria-label="Key operating metrics"></section>
  <div class="contentgrid">
