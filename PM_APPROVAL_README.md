@@ -1,41 +1,85 @@
-# MMIS Vendor Overview + Facility Intelligence -- PM Design Approval
+# MMIS Extended Intelligence — Product Manager Visual Approval
 
-**Version:** 1.0 (2026-11-09)
-**Related Linear issue:** https://linear.app/oits-dhaka/issue/MMIS-893/fe-refine-insights-cards-and-responsive-dashboard-layouts
-**Delivery:** Visual/UI approval package, not an implementation PR.
+**Prepared:** November 9, 2026  
+**Status:** UI/UX proposal for review; no application, GitHub, Linear, or production changes.  
+**Design baseline:** Current MarketMasterERP `style.css` color tokens and DM Sans styling.
 
-## How the PM reviews the exact mockup
+## 1. Contents
 
-1. Download and extract this ZIP.
-2. Open `MMIS_Vendor_Facility_Interactive_Prototype.html` in Chrome, Edge or Firefox. No local server, login or external dependencies are required.
-3. Switch between **Facility Intelligence** and **Vendor Overview** using the sidebar (or `Switch page` button on narrow screens).
-4. Under Facility Intelligence, click the **Shop / 61-90 days Vendors / UGX** matrix cell, or click the **See Shops overdue 61-90 days** link. This opens Vendor Overview with `Shop` and `61-90 days` filters selected.
-5. Inspect the Vendor list, Export preview, and Rent reminder preview. No real export, reminders or API requests are performed.
-6. Resize the browser to approx. 390px wide (or inspect supplied mobile screenshots), and review readability of cards, filter controls, table overflow and actions.
-7. Compare against the desktop/mobile screenshots included in this archive.
+- `MMIS_Expanded_Intelligence_Interactive_Prototype.html`: interactive four-page, role-aware prototype (works offline in Chrome/Edge).
+- Desktop and mobile PNG screenshots of Admin Supplier Overview, Staff & Managers, Vendor Business Insights, Supplier Business Insights, and pending-account states.
+- The consolidated ZIP adds the **previous** three-page designs: Global Operations Dashboard, Vendor Overview, and Facility Intelligence.
 
-## Requested PM design decisions
+All names, figures, periods, account statuses, and records in prototypes are fictional.
 
-- [ ] Approve the names and labels on all main cards and tables.
-- [ ] Approve page ownership: Facility Intelligence owns the Unit Type and physical-asset matrix; Vendor Overview owns Vendor/tenancy, invoice aging and collections worklists.
-- [ ] Approve the compact four-card KPI layout and removal of repeated full Facility Type cards from Vendor Overview.
-- [ ] Approve the Unit Type rent table (units, assigned Vendors, rent billed, payments applied, unpaid rent, and age-based Vendor/UGX drill-down).
-- [ ] Approve the 1-30 / 31-60 / 61-90 / over-90 aging interaction and matched Vendor drill-down.
-- [ ] Approve Market/period/unit/aging filters, additional location/Contract filters, and bidirectional navigation.
-- [ ] Approve the placement of CSV/XLSX export and administrator notification/reminder preview.
-- [ ] Approve the shared Contract mismatch and financial-review notices across both pages.
-- [ ] Approve desktop/mobile responsiveness and existing MMIS theme preservation.
-- [ ] Record change requests clearly against screenshot/section names.
+## 2. Prototype interactions
 
-## What this preview is and is not
+1. Open HTML locally in Chrome/Edge.
+2. Select one of four pages with the page selector or sidebar.
+3. In Admin pages, switch SuperAdmin / MarketMaster. SuperAdmin may select a Market or global portfolio; MarketMaster is locked to their assigned Market (simulation).
+4. In Vendor and Supplier business pages, switch Approved / Awaiting approval to confirm entitlement gating.
+5. In Admin Supplier Overview click a KYC, readiness or order KPI to filter the sample Supplier list; search sample Supplier rows.
+6. In Staff & Managers Overview click coverage/status cards to filter staff rows. MarketMaster must not be shown cross-Market manager coverage or the SuperAdmin management roster.
+7. In Supplier Business Insights search the sample accepted-order table.
+8. Click Export, record link or Refresh to see a descriptive prototype-only action preview. No real export, payment, contact or notification is issued.
+9. Review screenshots at desktop and mobile widths. Wide tables scroll within their own container.
 
-- The preview reflects the two coordinated designs presented in the ChatGPT discussion.
-- Colors use the verified MarketMasterERP `style.css` light-theme tokens: `#f7f4eb` background, `#fffdf8` card, `#263e32` primary/foreground, `#eeece2` muted and `#dcded0` border; typography follows the current DM Sans / Arial stack.
-- ALL Vendor names, Market choices, amounts, counts, statuses and discrepancy IDs are **illustrative sample data**.
-- Changing a filter only demonstrates selected UI context and example-row availability; it does not recompute real financial results.
-- The file does **not** implement or validate the backend financial attribution, API permission model, reconciliation, exports or notification dispatch.
-- Approval of this design is separate from Finance approval of data definitions and from production deployment approval.
+## 3. Existing application source findings (read-only)
 
-## Suggested PM approval response
+| Page | Verified current route/component | Present data / constraints | Proposed extension |
+|---|---|---|---|
+| Admin Supplier Overview | `/suppliers/overview`, `components/supplier/SupplierOverview.tsx` | `total`, `active`, `pendingKyc`, `verifiedKyc` | Market grants/readiness, PO worklist, supplier delivery performance, approval queue |
+| Admin Staff Overview | `/staff/overview`, `components/staff/StaffOverview.tsx` | `totalAssigned`, `activeCount`, `totalMarkets`, `unassignedMarkets` for Gate staff | Manager coverage and permissions, staffing/shift gaps if backend evidence exists |
+| SuperAdmin Market Managers | `/users/marketmasters`; `/staff/marketmasters` redirects | SuperAdmin-only manager list and lifecycle | Linked management coverage summaries; not exposed to MarketMaster |
+| Vendor Business Dashboard | `/dashboard` renders `FacilityJourney` and `VendorPaymentsOverview` for Vendors | Rent invoices, payment attempts, onboarding; Inventory and requisitions routes exist | Unified rent + Shop + inventory + purchasing; sales/profit only with verified sales/cost sources |
+| Supplier Portal | `/dashboard` currently redirects Suppliers to `/requisitions`; `/supplier-fulfillment` exists | Published requisitions, accepted bids, Supplier deliveries | Optional `/supplier/insights` route with bid pipeline, gate-received performance and settlement when validated |
 
-"Reviewed the attached MMIS Vendor Overview and Facility Intelligence HTML prototype and four screenshots. I approve the overall page layout, labels, shared Market/Unit Type/aging filters, clickable Unit Type to Vendor investigation, issue visibility, responsive structure, and placement of CSV/XLSX export and reminder-preview controls, subject to the linked financial-contract/permission acceptance gates. Please implement on dedicated feature branches without changing protected branches or the existing MMIS theme. Any exceptions or requested design adjustments are listed below: ..."
+**Backend limitations that must remain visible to PM:** Current Supplier overview has no actor/Market-scoped financial or order analytics contract. Supplier performance and Market eligibility require authoritative grant/PO/delivery evidence. Staff shift coverage is not established by account status alone. Vendor sales/margin cannot be inferred from inventory or rent payments. Supplier settled/paid amounts cannot be inferred from accepted bids.
+
+## 4. Role-specific page ownership
+
+| Persona | Main decisions | Headlines | Secondary information and worklists |
+|---|---|---|---|
+| SuperAdmin — Supplier Overview | Who is verified, approved for a Market, and delivering on commitments? | Registered Suppliers; KYC requiring review; Market-ready Suppliers (proposed); Orders requiring attention (proposed) | Approval progress, grants, Supplier list, PO/delivery exceptions |
+| SuperAdmin — Staff & Managers | Which Markets lack managers/staff and whose access needs review? | Markets with manager; missing manager; active Gate staff; assignment exceptions | Market-manager roster, Gate staff, audit/access history |
+| MarketMaster — Staff & Managers | Is this Market properly staffed and are assignments safe? | Active Gate staff; gaps; assigned staff; access needing review | Own-Market staff table, local assignment queue; NO global manager roster |
+| Vendor — My Business | What rent must I pay, what stock is low, which supply requests need action? | Rent to pay; next due; low-stock products; open requisitions | Invoice/payment evidence, inventory alerts, purchase requests; sales/margins only when supported |
+| Supplier — My Supply Business | Which requisitions can I bid on, what did I win, and which deliveries need attention? | Open requests; accepted bids; deliveries needing action; pending settlement (proposed) | Awarded bids, dispatch tasks, receiving/fulfillment, verified financial settlement |
+
+## 5. Non-negotiable access rules
+
+- All views are **role- and owner-scoped on the backend**, not only hidden in frontend.
+- MarketMaster does not inherit SuperAdmin Market comparison or MarketMaster-management privileges.
+- Vendor account with unapproved onboarding / no active eligible Facility–RentContract does not see inventory, rent-payment, invoice, or revenue management UI. Keep public Shop discovery accessible to authenticated users, with logged-in header and no guest Sign In button.
+- Supplier pending KYC or Market eligibility sees only explicitly permitted pre-approval steps, not other Suppliers' bids or private Vendor requests.
+- Active Vendor financial figures are strictly their own Vendor+Market+RentContract+Invoice evidence.
+- Accepted Supplier bids are not payments, delivered goods, or settled amounts; only independent confirmed evidence can certify each stage.
+- Exported information and notifications must match server-authorized filtered cohorts and applicable data-protection policy.
+
+## 6. PM review checklist
+
+- [ ] **Admin Supplier Overview:** approves simple labels, four headline metrics, readiness funnel, action queue and Supplier worklist.
+- [ ] **SuperAdmin Staff & Managers:** approves cross-Market coverage and manager ownership boundaries.
+- [ ] **MarketMaster Staff:** approves own-Market staff/worklist only; confirms no manager-lifecycle leakage.
+- [ ] **Vendor Business Insights:** approves onboarding-pending state and active rental/stock/procurement layout; sales/margin clearly future.
+- [ ] **Supplier Business Insights:** approves sourcing/bidding/accepted delivery journey; no presumed settlements.
+- [ ] **MMIS theme:** same primary, background, cards, muted, warning, borders, font, navigation and responsive style.
+- [ ] **Responsive:** desktop and mobile layouts; focus, labels, filter wrapping, and horizontally scrollable tables.
+- [ ] **Cross-page consistency:** Admin Global summary links to domain pages, but does not duplicate their entire detailed analyses.
+- [ ] **Metrics:** approve definitions, evidence requirements and ownership before building new APIs.
+- [ ] **Release gates:** UI approval does not authorize database migrations, PO/credit changes, payments, exports or notification dispatch.
+
+## 7. Recommended engineering slices
+
+1. **Frontend read-only UX foundation:** common insight header, metrics, action queue, filters, detail table, source notes, responsive components; adapt existing admin Supplier/Staff overviews.
+2. **Backend scope/eligibility:** Supplier Market grant and role authorization; staff manager coverage and owner scoping; versioned contracts and cache keys.
+3. **Supplier procurement evidence:** reconcile requisition → bid → accepted PO → dispatch → Gate/Stock accepted delivery; never derive on-time delivery from dispatch alone.
+4. **Vendor Business Metrics:** reuse verified rent/payment and inventory data; introduce sales and margins only after validated transaction and cost contracts.
+5. **Supplier Business Metrics:** accepted bid and delivery read models; settlement only on separate payment evidence.
+6. **Authenticated acceptance:** SuperAdmin and MarketMaster scope, Vendor/Supplier pending and active states, cross-Market denial, 320/375/768/1280/1440px, 200%/400% zoom, empty/partial/stale data, user-owned filter/export parity.
+
+## 8. Suggested PM signoff message
+
+> Attached are the next four MarketMaster intelligence designs: Admin Supplier Overview, Admin Market Staff & Managers Overview (SuperAdmin/MarketMaster), Vendor Business Insights, and Supplier Business Insights. The package also includes the previously reviewed Global Operations, Vendor Overview and Facility Intelligence prototypes. Please inspect the interactive HTML, switch roles and business onboarding states, and review desktop/mobile screenshots. Approve the **visual hierarchy, labels, navigation and role-specific visibility** or return comments by page and section. Metrics marked Proposed need separate backend source/financial approval before implementation. No code or financial changes are authorized by a visual approval.
+
+**Repositories:** `oits-dhaka/MarketMasterApi` and `oits-dhaka/MarketMasterERP`. Do not modify `dev`, `main`, `dev_basic`, or `staging` directly. No new workflow files; local/manual exact-head UAT.
