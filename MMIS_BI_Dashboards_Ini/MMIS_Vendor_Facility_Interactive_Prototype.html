@@ -26,8 +26,8 @@
   <div class="nav-title">Management</div>
   <button type="button" class="nav-item" id="nav-vendor" data-page="vendor"><span class="navglyph">V</span>Vendor Overview</button>
   <button type="button" class="nav-item active" id="nav-facility" data-page="facility"><span class="navglyph">F</span>Facility Intelligence</button>
-  <button type="button" class="nav-item" data-action="supplier-preview"><span class="navglyph">S</span>Suppliers</button>
-  <button type="button" class="nav-item" data-action="billing-preview"><span class="navglyph">$</span>Payments &amp; Billing</button>
+  <a href="../MMIS_BI_Dashboards_V2/03_Expanded_Intelligence/MMIS_Expanded_Intelligence_Interactive_Prototype.html#supplier-admin" class="nav-item" style="text-decoration:none" title="Go to Supplier Overview"><span class="navglyph">S</span>Suppliers</a>
+  <button type="button" class="nav-item" id="nav-billing" data-page="vendor"><span class="navglyph">$</span>Payments &amp; Billing</button>
   <div class="nav-title">Administration</div>
   <button type="button" class="nav-item" data-action="reports-preview"><span class="navglyph">R</span>Reports</button>
   <button type="button" class="nav-item" data-action="settings-preview"><span class="navglyph">*</span>Settings</button>
@@ -290,16 +290,13 @@
       });
     }
     if(a==='supplier-preview'){
-      modal('Suppliers Module Preview','Supplier readiness, purchase orders, and delivery verification. Linked from the Operations Dashboard overview.', {
-        label: 'View on Operations Dashboard',
-        href: getDashboardUrl()
-      });
+      window.location.href = '../MMIS_BI_Dashboards_V2/03_Expanded_Intelligence/MMIS_Expanded_Intelligence_Interactive_Prototype.html#supplier-admin';
+      return;
     }
     if(a==='billing-preview'){
-      modal('Payments & Billing Preview','Online payment gateway verification, payment matching exceptions, and offline cashier receipt certification. Detailed queues are summarized on the Operations Dashboard.', {
-        label: 'View Dashboard Payment Queues',
-        href: getDashboardUrl()
-      });
+      focus = false;
+      setPage('vendor');
+      return;
     }
     if(a==='reports-preview'){
       modal('Reports & Audits Preview','Consolidated ledger exports, occupancy audits, and financial aging reconciliation statements across all authorized markets.');

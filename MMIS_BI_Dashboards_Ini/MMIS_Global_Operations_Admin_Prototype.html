@@ -23,9 +23,9 @@
  <span class="side-h">MANAGEMENT</span>
  <a class="navlink" href="MMIS_Vendor_Facility_Interactive_Prototype.html?page=vendor" id="navlink-vendor" data-route="/vendors/overview" data-title="Vendor Overview"><span>V</span> Vendor Overview</a>
  <a class="navlink" href="MMIS_Vendor_Facility_Interactive_Prototype.html?page=facility" id="navlink-facility" data-route="/shops/insights" data-title="Facility Intelligence"><span>F</span> Facility Intelligence</a>
- <a class="navlink" href="#" data-route="/suppliers/overview" data-title="Supplier Overview"><span>S</span> Supplier Overview</a>
- <a class="navlink" href="#" data-route="/billing/invoices" data-title="Payments & Billing"><span>$</span> Payments &amp; Billing</a>
- <a class="navlink" href="#" data-route="/staff/overview" data-title="Staff Overview"><span>G</span> Staff Overview</a>
+ <a class="navlink" href="../MMIS_BI_Dashboards_V2/03_Expanded_Intelligence/MMIS_Expanded_Intelligence_Interactive_Prototype.html#supplier-admin" data-route="/suppliers/overview" data-title="Supplier Overview"><span>S</span> Supplier Overview</a>
+ <a class="navlink" href="MMIS_Vendor_Facility_Interactive_Prototype.html?page=vendor" data-route="/billing/invoices" data-title="Payments & Billing"><span>$</span> Payments &amp; Billing</a>
+ <a class="navlink" href="../MMIS_BI_Dashboards_V2/03_Expanded_Intelligence/MMIS_Expanded_Intelligence_Interactive_Prototype.html#staff-admin" data-route="/staff/overview" data-title="Staff Overview"><span>G</span> Staff Overview</a>
  <span class="side-h">ADMINISTRATION</span>
  <a class="navlink" href="#" data-route="/markets" data-title="Markets"><span>◈</span> Markets</a>
  <a class="navlink" href="#" data-route="/reports" data-title="Reports"><span>▥</span> Reports</a>
@@ -314,6 +314,31 @@ document.addEventListener('click',e=>{
         sp.forEach((v, k) => { extra[k] = v; });
       }
       window.location.href = getVendorFacilityUrl('facility', extra);
+      return;
+    }
+
+    if (route.startsWith('/suppliers/overview')) {
+      window.location.href = '../MMIS_BI_Dashboards_V2/03_Expanded_Intelligence/MMIS_Expanded_Intelligence_Interactive_Prototype.html#supplier-admin';
+      return;
+    }
+    if (route.startsWith('/staff/overview')) {
+      window.location.href = '../MMIS_BI_Dashboards_V2/03_Expanded_Intelligence/MMIS_Expanded_Intelligence_Interactive_Prototype.html#staff-admin';
+      return;
+    }
+    if (route.startsWith('/billing/invoices') || route.startsWith('/billing/online') || route.startsWith('/billing/offline')) {
+      window.location.href = getVendorFacilityUrl('vendor');
+      return;
+    }
+    if (route.startsWith('/markets')) {
+      e.preventDefault();
+      const m = $(scope()==='master'?'master-market':'super-market') || $('super-market');
+      if (m) m.scrollIntoView({behavior:'smooth'});
+      return;
+    }
+    if (route.startsWith('/reports')) {
+      e.preventDefault();
+      const r = $('definitions');
+      if (r) r.scrollIntoView({behavior:'smooth'});
       return;
     }
 

@@ -16,21 +16,22 @@
 <body>
 <div class="app">
 <aside class="sidebar" aria-label="Navigation demonstration">
-  <div class="brand">MarketMaster</div><div class="brand-sub">MMIS - MARKET OPERATIONS</div>
-  <div class="nav-item"><span class="navglyph">#</span>Dashboard</div>
+  <a href="../01_Global_Dashboard/MMIS_Global_Operations_Admin_Prototype.html" style="text-decoration:none;color:inherit;display:block" title="Go to Operations Dashboard"><div class="brand">MarketMaster</div><div class="brand-sub">MMIS - MARKET OPERATIONS</div></a>
+  <a href="../01_Global_Dashboard/MMIS_Global_Operations_Admin_Prototype.html" class="nav-item" id="nav-dashboard" style="text-decoration:none" title="Go to Operations Dashboard"><span class="navglyph">▦</span>Dashboard</a>
   <div class="nav-title">Management</div>
   <button type="button" class="nav-item" id="nav-vendor" data-page="vendor"><span class="navglyph">V</span>Vendor Overview</button>
   <button type="button" class="nav-item active" id="nav-facility" data-page="facility"><span class="navglyph">F</span>Facility Intelligence</button>
-  <div class="nav-item"><span class="navglyph">S</span>Suppliers</div>
-  <div class="nav-item"><span class="navglyph">$</span>Payments &amp; Billing</div>
+  <a href="../03_Expanded_Intelligence/MMIS_Expanded_Intelligence_Interactive_Prototype.html#supplier-admin" class="nav-item" id="nav-suppliers" style="text-decoration:none" title="Go to Supplier Overview"><span class="navglyph">S</span>Suppliers</a>
+  <button type="button" class="nav-item" id="nav-billing" data-page="vendor"><span class="navglyph">$</span>Payments &amp; Billing</button>
   <div class="nav-title">Administration</div>
-  <div class="nav-item"><span class="navglyph">R</span>Reports</div>
+  <button type="button" class="nav-item" id="nav-reports"><span class="navglyph">R</span>Reports</button>
   <div class="nav-item"><span class="navglyph">*</span>Settings</div>
   <div class="aside-note">Design preview only. Existing MMIS navigation and color system retained; no functionality connected to live services.</div>
 </aside>
 <div class="layout">
 <header class="topbar">
   <button type="button" class="btn small mobile-menu" id="mobile-toggle">Switch page</button>
+  <a href="../01_Global_Dashboard/MMIS_Global_Operations_Admin_Prototype.html" class="btn small mobile-menu" id="mobile-dashboard" style="text-decoration:none">▦ Dashboard</a>
   <div class="breadcrumb">MMIS / Intelligence / <strong id="breadcrumb-page">Facility Intelligence</strong></div>
   <div class="account"><span>Notifications</span><span class="avatar">AD</span><span>Admin</span></div>
 </header>
@@ -117,7 +118,15 @@
     {code:'V-102',name:'Example Vendor B',shop:'Shop S-028',age:68,inv:1,amount:'240,000',review:'Needs review'},
     {code:'V-103',name:'Example Vendor C',shop:'Shop S-031',age:63,inv:1,amount:'180,000',review:'Verified'}
   ];
-  let page='facility',focus=false;const state=()=>({market:$('#market').value,unit:$('#unit').value,aging:$('#aging').value,period:$('#period').value});
+  const urlParams = new URLSearchParams(window.location.search);
+  const hash = window.location.hash.toLowerCase();
+  let initPage = 'facility';
+  if (urlParams.get('page') === 'vendor' || hash === '#vendor') {
+    initPage = 'vendor';
+  } else if (urlParams.get('page') === 'facility' || hash === '#facility') {
+    initPage = 'facility';
+  }
+  let page=initPage,focus=false;const state=()=>({market:$('#market').value,unit:$('#unit').value,aging:$('#aging').value,period:$('#period').value});
   const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   function setPage(which){page=which;$('#page-facility').classList.toggle('active',page==='facility');$('#page-vendor').classList.toggle('active',page==='vendor');$('#nav-vendor').classList.toggle('active',page==='vendor');$('#nav-facility').classList.toggle('active',page==='facility');$('#breadcrumb-page').textContent=page==='facility'?'Facility Intelligence':'Vendor Overview';window.scrollTo({top:0,behavior:'instant'});render();}
   function filterFocus(){const x=state();return unitLabels[x.unit]+' / '+ageLabels[x.aging];}
@@ -137,6 +146,8 @@
   $('#mobile-toggle').addEventListener('click',()=>{focus=false;setPage(page==='facility'?'vendor':'facility')});
   $('#to-facility').addEventListener('click',()=>{focus=false;setPage('facility')});
   $('#quick-shop').addEventListener('click',()=>{$('#unit').value='SHOP';$('#aging').value='DAYS_61_90';focus=true;setPage('vendor')});
+  const billingBtn=$('#nav-billing');if(billingBtn){billingBtn.addEventListener('click',()=>{focus=false;setPage('vendor')});}
+  const reportsBtn=$('#nav-reports');if(reportsBtn){reportsBtn.addEventListener('click',()=>{const def=$('.definition');if(def){def.open=true;def.scrollIntoView({behavior:'smooth'});}});}
   ['market','unit','aging','period'].forEach(id=>$('#'+id).addEventListener('change',()=>{focus=false;render()}));
   $('#vendor-search').addEventListener('input',render);
   const agingTiles=[['DAYS_1_30','1-30 days','1.8m','19 Vendors'],['DAYS_31_60','31-60 days','1.2m','12 Vendors'],['DAYS_61_90','61-90 days','1.82m','17 type-level entries'],['DAYS_90_PLUS','Over 90 days','0.78m','8 Vendors']];

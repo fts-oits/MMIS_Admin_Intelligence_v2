@@ -12,7 +12,7 @@
 @media print{.sidebar,.controls,.samplebar,.buttons,.mobile-switch,.modal-bg{display:none!important}.view{display:flex!important;break-before:page}.app{display:block}}
 </style></head>
 <body><div class="app">
-<aside class="sidebar" aria-label="Demo intelligence navigation"><div class="brand">MarketMaster<small>MMIS · BUSINESS INTELLIGENCE</small></div><div class="nav-label">Administration</div>
+<aside class="sidebar" aria-label="Demo intelligence navigation"><a href="../01_Global_Dashboard/MMIS_Global_Operations_Admin_Prototype.html" class="brand-link" style="text-decoration:none;color:inherit;display:block" title="Go to Operations Dashboard"><div class="brand">MarketMaster<small>MMIS · BUSINESS INTELLIGENCE</small></div></a><div class="nav-label">Administration</div>
 <button class="nav active" data-go="supplier-admin"><span>▧</span> Supplier Overview</button>
 <button class="nav" data-go="staff-admin"><span>♙</span> Staff &amp; Managers</button>
 <div class="nav-label">Business portals</div>
@@ -122,7 +122,7 @@ function showModal(type){const titles={detail:'Record detail — proposal',expor
  document.getElementById('page-switch').addEventListener('click',()=>{const opts=Object.keys(pages);page.value=opts[(opts.indexOf(page.value)+1)%opts.length];update();window.scrollTo({top:0,behavior:'smooth'})});
  document.getElementById('modal-close').addEventListener('click',()=>{modal.classList.remove('show');modal.setAttribute('aria-hidden','true')});
  modal.addEventListener('click',e=>{if(e.target===modal){modal.classList.remove('show');modal.setAttribute('aria-hidden','true')}});window.addEventListener('keydown',e=>{if(e.key==='Escape'&&modal.classList.contains('show')){modal.classList.remove('show');modal.setAttribute('aria-hidden','true')}});
- const initial=window.location.hash.slice(1);if(pages[initial])page.value=initial;
+ const initial=window.location.hash.slice(1)||(new URLSearchParams(window.location.search).get('page'));if(pages[initial])page.value=initial;
  filterRows('suppliers');update();
 })();
 </script></body></html>
