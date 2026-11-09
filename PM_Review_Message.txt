@@ -1,0 +1,7 @@
+Please review the attached MMIS Vendor Overview + Facility Intelligence UI/UX approval package for MMIS-893.
+
+Open the HTML file in a browser, review both pages, click Shop -> 61-90 days to see the Vendor drill-down concept, and inspect the export/reminder preview. Desktop and mobile screenshots are included.
+
+I need your approval on: labels, KPI selection, Unit Type/rent matrix, aging filters, Vendor worklist, cross-page navigation, discrepancy notices, export/reminder placement, and responsive behavior. Preserve the existing MMIS theme/colors and existing functional permissions. All figures in this mockup are sample data; do not treat the prototype as backend acceptance.
+
+Please reply APPROVED or provide precise change requests by section/screenshot. After design approval, separate backend financial reconciliation and notification authorization must still be implemented and tested before enabling live actions.
