@@ -16,26 +16,28 @@
 <body>
 <div class="app">
 <aside class="sidebar" aria-label="Navigation demonstration">
-  <div class="brand">MarketMaster</div><div class="brand-sub">MMIS - MARKET OPERATIONS</div>
-  <div class="nav-item"><span class="navglyph">#</span>Dashboard</div>
+  <a href="../01_Global_Dashboard/MMIS_Global_Operations_Admin_Prototype.html" style="text-decoration:none;color:inherit;display:block" title="Go to Operations Dashboard"><div class="brand">MarketMaster</div><div class="brand-sub">MMIS - MARKET OPERATIONS</div></a>
+  <a href="../01_Global_Dashboard/MMIS_Global_Operations_Admin_Prototype.html" class="nav-item" id="nav-dashboard" style="text-decoration:none" title="Go to Operations Dashboard"><span class="navglyph">▦</span>Dashboard</a>
   <div class="nav-title">Management</div>
   <button type="button" class="nav-item" id="nav-vendor" data-page="vendor"><span class="navglyph">V</span>Vendor Overview</button>
   <button type="button" class="nav-item active" id="nav-facility" data-page="facility"><span class="navglyph">F</span>Facility Intelligence</button>
-  <div class="nav-item"><span class="navglyph">S</span>Suppliers</div>
-  <div class="nav-item"><span class="navglyph">$</span>Payments &amp; Billing</div>
+  <a href="../03_Expanded_Intelligence/MMIS_Expanded_Intelligence_Interactive_Prototype.html#supplier-admin" class="nav-item" id="nav-suppliers" style="text-decoration:none" title="Go to Supplier Overview"><span class="navglyph">S</span>Suppliers</a>
+  <button type="button" class="nav-item" id="nav-billing" data-page="vendor"><span class="navglyph">$</span>Payments &amp; Billing</button>
   <div class="nav-title">Administration</div>
-  <div class="nav-item"><span class="navglyph">R</span>Reports</div>
+  <button type="button" class="nav-item" id="nav-reports"><span class="navglyph">R</span>Reports</button>
   <div class="nav-item"><span class="navglyph">*</span>Settings</div>
   <div class="aside-note">Design preview only. Existing MMIS navigation and color system retained; no functionality connected to live services.</div>
 </aside>
 <div class="layout">
 <header class="topbar">
   <button type="button" class="btn small mobile-menu" id="mobile-toggle">Switch page</button>
+  <a href="../01_Global_Dashboard/MMIS_Global_Operations_Admin_Prototype.html" class="btn small mobile-menu" id="mobile-dashboard" style="text-decoration:none">▦ Dashboard</a>
   <div class="breadcrumb">MMIS / Intelligence / <strong id="breadcrumb-page">Facility Intelligence</strong></div>
   <div class="account"><span>Notifications</span><span class="avatar">AD</span><span>Admin</span></div>
 </header>
 <div class="notice"><div><strong>Design approval prototype</strong> - example Vendors, amounts and Markets only. The final UI must use authorized, reconciled MMIS data.</div><button class="btn small" type="button" id="help-button">Review notes</button></div>
 <main class="content">
+<div class="heading"><div><h1 id="page-heading-title">Facility Intelligence</h1><p class="subtitle" id="page-heading-subtitle">Facilities, assigned Vendors, rent performance and contract issues.</p></div><div class="actions"><button class="btn" data-action="refresh">Refresh</button><button class="btn" data-action="export">Export CSV / XLSX</button></div></div>
 <div class="scopebar" aria-label="Shared intelligence filters">
   <div class="field"><label for="market">Market</label><select id="market"><option value="a">Example Market A</option><option value="b">Example Market B</option><option value="all">All authorized Markets</option></select></div>
   <div class="field"><label for="period">Reporting period</label><select id="period"><option value="current">Current month</option><option value="last3">Last 3 months</option></select></div>
@@ -44,7 +46,6 @@
   <span class="scope-asof">Example reporting snapshot - not live</span>
 </div>
 <section class="page active" id="page-facility" aria-label="Facility Intelligence design">
-  <div class="heading"><div><h1>Facility Intelligence</h1><p class="subtitle">Facilities, assigned Vendors, rent performance and contract issues.</p></div><div class="actions"><button class="btn" data-action="refresh">Refresh</button><button class="btn" data-action="export">Export CSV / XLSX</button></div></div>
   <div class="kpis">
     <div class="kpi"><div class="label">Total rentable units</div><div class="value">267</div><div class="hint">Shop-backed, not deleted</div></div>
     <div class="kpi"><div class="label">Occupied (in registry)</div><div class="value">202</div><div class="hint">Recorded status, not inspection</div></div>
@@ -77,7 +78,6 @@
   <details class="section-card definition"><summary>How these figures are calculated</summary><p>Physical units come from non-deleted Shop-backed rentable units; companion/default Stalls are not counted as extra units. Vendor assignment, valid rent contracts, expected monthly rent, billed rent, applied payments and overdue invoice balances are distinct measures. Held financial evidence must be disclosed separately. This prototype does not perform calculations.</p></details>
 </section>
 <section class="page" id="page-vendor" aria-label="Vendor Overview design">
-  <div class="heading"><div><h1>Vendor Overview</h1><p class="subtitle">Vendor accounts, tenancy, unpaid rent and collection follow-up.</p></div><div class="actions"><button class="btn" data-action="refresh">Refresh</button><button class="btn" data-action="export">Export CSV / XLSX</button></div></div>
   <div class="kpis"><div class="kpi"><div class="label">Registered Vendors</div><div class="value">248</div><div class="hint">Account population</div></div><div class="kpi"><div class="label">Vendors with active rent contracts</div><div class="value">176</div><div class="hint">Distinct Vendor accounts</div></div><div class="kpi warn"><div class="label">Vendors with overdue rent</div><div class="value">41</div><div class="hint">Across all overdue periods</div></div><div class="kpi"><div class="label">Vendor approvals pending</div><div class="value">14</div><div class="hint">KYC and approval review</div></div></div>
   <div class="section-card"><div class="section-heading"><div><h2>Rent &amp; Payments</h2><p>What was billed, what was applied and what remains unpaid.</p></div><span class="pill">UGX - same invoice period</span></div>
     <div class="money-grid"><div class="money-box"><div class="label">Rent billed</div><div class="value">29.4m</div><div class="unit">UGX</div></div><div class="money-box"><div class="label">Payments applied</div><div class="value">22.1m</div><div class="unit">UGX</div></div><div class="money-box"><div class="label">Rent still unpaid</div><div class="value">7.3m</div><div class="unit">UGX</div></div><div class="money-box"><div class="label">Verified overdue rent</div><div class="value">5.6m</div><div class="unit">UGX</div></div></div><p class="helper">Amounts requiring reconciliation review are disclosed separately in the actual implementation. Historical arrears, advance credits, refunds and payment source evidence are available in detailed reports.</p>
@@ -117,9 +117,17 @@
     {code:'V-102',name:'Example Vendor B',shop:'Shop S-028',age:68,inv:1,amount:'240,000',review:'Needs review'},
     {code:'V-103',name:'Example Vendor C',shop:'Shop S-031',age:63,inv:1,amount:'180,000',review:'Verified'}
   ];
-  let page='facility',focus=false;const state=()=>({market:$('#market').value,unit:$('#unit').value,aging:$('#aging').value,period:$('#period').value});
+  const urlParams = new URLSearchParams(window.location.search);
+  const hash = window.location.hash.toLowerCase();
+  let initPage = 'facility';
+  if (urlParams.get('page') === 'vendor' || hash === '#vendor') {
+    initPage = 'vendor';
+  } else if (urlParams.get('page') === 'facility' || hash === '#facility') {
+    initPage = 'facility';
+  }
+  let page=initPage,focus=false;const state=()=>({market:$('#market').value,unit:$('#unit').value,aging:$('#aging').value,period:$('#period').value});
   const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  function setPage(which){page=which;$('#page-facility').classList.toggle('active',page==='facility');$('#page-vendor').classList.toggle('active',page==='vendor');$('#nav-vendor').classList.toggle('active',page==='vendor');$('#nav-facility').classList.toggle('active',page==='facility');$('#breadcrumb-page').textContent=page==='facility'?'Facility Intelligence':'Vendor Overview';window.scrollTo({top:0,behavior:'instant'});render();}
+  function setPage(which){page=which;$('#page-facility').classList.toggle('active',page==='facility');$('#page-vendor').classList.toggle('active',page==='vendor');$('#nav-vendor').classList.toggle('active',page==='vendor');$('#nav-facility').classList.toggle('active',page==='facility');$('#breadcrumb-page').textContent=page==='facility'?'Facility Intelligence':'Vendor Overview';const ht=$('#page-heading-title'),hs=$('#page-heading-subtitle');if(ht)ht.textContent=page==='facility'?'Facility Intelligence':'Vendor Overview';if(hs)hs.textContent=page==='facility'?'Facilities, assigned Vendors, rent performance and contract issues.':'Vendor accounts, tenancy, unpaid rent and collection follow-up.';window.scrollTo({top:0,behavior:'instant'});render();}
   function filterFocus(){const x=state();return unitLabels[x.unit]+' / '+ageLabels[x.aging];}
   function render(){const s=state();$('#facility-cohort').textContent=filterFocus();$('#vendor-cohort').textContent=filterFocus();$('#focus-pill').classList.toggle('visible',focus&&page==='vendor');
     $('#unit-rows').innerHTML=unitRows.map(r=>`<tr class="${s.unit===r[0]?'featured':''}"><td class="strong">${r[1]}</td><td class="num">${r[2]}</td><td class="num">${r[3]}</td><td class="num">${r[4]}</td><td class="num">${r[5]}</td><td class="num">${r[6]}</td><td class="num"><button type="button" class="clickcell" data-drill="${r[0]}" aria-label="View ${r[1]} vendors 61 to 90 days overdue">${r[7]} / ${r[8]} &rarr;</button></td></tr>`).join('');
@@ -137,6 +145,8 @@
   $('#mobile-toggle').addEventListener('click',()=>{focus=false;setPage(page==='facility'?'vendor':'facility')});
   $('#to-facility').addEventListener('click',()=>{focus=false;setPage('facility')});
   $('#quick-shop').addEventListener('click',()=>{$('#unit').value='SHOP';$('#aging').value='DAYS_61_90';focus=true;setPage('vendor')});
+  const billingBtn=$('#nav-billing');if(billingBtn){billingBtn.addEventListener('click',()=>{focus=false;setPage('vendor')});}
+  const reportsBtn=$('#nav-reports');if(reportsBtn){reportsBtn.addEventListener('click',()=>{const def=$('.definition');if(def){def.open=true;def.scrollIntoView({behavior:'smooth'});}});}
   ['market','unit','aging','period'].forEach(id=>$('#'+id).addEventListener('change',()=>{focus=false;render()}));
   $('#vendor-search').addEventListener('input',render);
   const agingTiles=[['DAYS_1_30','1-30 days','1.8m','19 Vendors'],['DAYS_31_60','31-60 days','1.2m','12 Vendors'],['DAYS_61_90','61-90 days','1.82m','17 type-level entries'],['DAYS_90_PLUS','Over 90 days','0.78m','8 Vendors']];

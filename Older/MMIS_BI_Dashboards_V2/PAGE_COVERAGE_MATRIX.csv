@@ -1,0 +1,8 @@
+Page,Persona,Current entry point,Main KPIs,Primary worklist,Shared interaction,New authoritative contract required
+Admin Supplier Overview,SuperAdmin and MarketMaster,/suppliers/overview,"Supplier accounts; KYC review; Ready-to-supply; Orders at risk","Supplier readiness and PO exceptions","Market and Supplier filters; CSV/XLSX",Market grants and POs/receipts
+Staff and Managers,SuperAdmin,/staff/overview and /users/marketmasters,"Markets with manager; missing manager; active staff; access review",Cross-market manager and staff roster,"Market role filter; audits; export",Manager coverage and staffing-gap evidence
+Market staff,MarketMaster,/staff/overview,"Active Gate staff; coverage gaps; assigned staff; access review",Own-market staff list,"Own Market only; no global manager roster",Staff shift/coverage if shown
+Vendor Business,Approved Vendor,/dashboard,"Unpaid rent; next due; stock low; open requisitions",Invoices and supply requests,"Facility/contract scoped; own records",Verified sales and costs for margin
+Vendor Onboarding,Pending Vendor,/dashboard,"Application status; KYC; tenancy entitlement",Application and public Shop discovery,"No active payments/invoices/inventory",Approved tenancy entitlement contract
+Supplier Business,Approved Supplier,/requisitions and /supplier-fulfillment,"Open requests; accepted bids; deliveries; pending settlement",Accepted bids and deliveries,"Own bids/orders only; export",PO/gate receipt/settlement contracts
+Supplier Onboarding,Pending Supplier,/requisitions under current routing,"KYC; business documents; Market grants",Supplier profile application,"Restrict private procurement actions",Approved supplier eligibility and access policy

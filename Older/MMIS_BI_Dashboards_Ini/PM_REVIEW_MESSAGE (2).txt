@@ -1,0 +1,14 @@
+Subject: PM approval request — MMIS Global Operations Dashboard (SuperAdmin & MarketMaster)
+
+Please review the attached MMIS Global Operations Dashboard UI prototype and desktop/mobile screenshots. The design preserves the current MarketMaster theme and proposes separate role-authorized SuperAdmin (all/selected Markets) and MarketMaster (assigned Market) views.
+
+To review: unzip, open MMIS_Global_Operations_Admin_Prototype.html in Chrome/Edge, switch the preview role, Market and reporting period, and click KPI cards, attention queues and domain links to see their intended drill-down context. Nothing connects to live MMIS; all numbers are illustrative.
+
+Please approve/comment on: four headline KPIs; prioritized Needs Your Attention section; compact rent and payment position; Vendor/Facility/Supplier/Payment/Staff coverage; SuperAdmin Market comparison; MarketMaster restricted Market priorities; exact labels and responsive layouts.
+
+The current admin API does not provide Supplier performance or per-Market financial comparison, and the final "verified" rent amounts require the separately approved reconciliation contract. The mockup labels these dependencies explicitly. PM GUI approval is separate from engineering/Finance UAT and permission acceptance.
+
+Related frontend UI work: MMIS-893 (https://linear.app/oits-dhaka/issue/MMIS-893/fe-refine-insights-cards-and-responsive-dashboard-layouts).
+
+Approval: Approve / Approve with changes / Request revision
+Comments: _____________________________________________

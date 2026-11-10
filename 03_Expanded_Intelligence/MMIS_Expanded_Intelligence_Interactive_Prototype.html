@@ -12,7 +12,7 @@
 @media print{.sidebar,.controls,.samplebar,.buttons,.mobile-switch,.modal-bg{display:none!important}.view{display:flex!important;break-before:page}.app{display:block}}
 </style></head>
 <body><div class="app">
-<aside class="sidebar" aria-label="Demo intelligence navigation"><div class="brand">MarketMaster<small>MMIS · BUSINESS INTELLIGENCE</small></div><div class="nav-label">Administration</div>
+<aside class="sidebar" aria-label="Demo intelligence navigation"><a href="../01_Global_Dashboard/MMIS_Global_Operations_Admin_Prototype.html" class="brand-link" style="text-decoration:none;color:inherit;display:block" title="Go to Operations Dashboard"><div class="brand">MarketMaster<small>MMIS · BUSINESS INTELLIGENCE</small></div></a><div class="nav-label">Administration</div>
 <button class="nav active" data-go="supplier-admin"><span>▧</span> Supplier Overview</button>
 <button class="nav" data-go="staff-admin"><span>♙</span> Staff &amp; Managers</button>
 <div class="nav-label">Business portals</div>
@@ -22,6 +22,10 @@
 <div class="workspace"><header class="topbar"><button type="button" class="btn small mobile-switch" id="page-switch">Switch page ▾</button><div class="crumb">MMIS / Intelligence / <strong id="crumb-title">Supplier Overview</strong></div><div class="identity"><span>◉ Notifications</span><span class="avatar" id="avatar">SA</span><span id="identity-title">SuperAdmin</span></div></header>
 <div class="samplebar"><span><strong>PM design preview</strong> — sample data, no live account access, export, payment or notification delivery. <strong>Outlined labels</strong> indicate proposed metrics requiring additional backend contracts.</span><span>Version 1.0</span></div>
 <main class="content">
+
+<!-- ADMIN SUPPLIERS -->
+<section class="view active" id="supplier-admin">
+ <div class="title-line"><div><h1>Supplier Overview</h1><p class="subtitle">Supplier readiness, approvals, purchase orders and delivery follow-up.</p></div><div class="buttons"><button class="btn" data-modal="filter">⟳ Refresh</button><button class="btn" data-modal="export">↓ Export summary</button></div></div>
 <section class="controls" aria-label="Design review scope and state">
 <div class="field"><label for="page">Preview page</label><select id="page"><option value="supplier-admin">Admin · Suppliers</option><option value="staff-admin">Admin · Staff &amp; Managers</option><option value="vendor-business">Vendor · Business</option><option value="supplier-business">Supplier · Business</option></select></div>
 <div class="field" id="admin-role-wrap"><label for="admin-role">Admin role</label><select id="admin-role"><option value="super">SuperAdmin</option><option value="master">MarketMaster</option></select></div>
@@ -30,10 +34,6 @@
 <div class="field"><label for="period">Reporting period</label><select id="period"><option value="month">This month</option><option value="quarter">Last 3 months</option><option value="year">This year</option></select></div>
 <div class="scope-note" id="scope-note">SuperAdmin portfolio. Market-specific metrics need authorized Market grants.</div>
 </section>
-
-<!-- ADMIN SUPPLIERS -->
-<section class="view active" id="supplier-admin">
- <div class="title-line"><div><h1>Supplier Overview</h1><p class="subtitle">Supplier readiness, approvals, purchase orders and delivery follow-up.</p></div><div class="buttons"><button class="btn" data-modal="filter">⟳ Refresh</button><button class="btn" data-modal="export">↓ Export summary</button></div></div>
  <div class="notice"><span class="tag proposed">New intelligence contract</span> Supplier registration and KYC counts already exist. Market eligibility, PO and delivery measures below are <strong>proposed</strong> and must be verified before launch.</div>
  <div class="kpis"><button class="kpi" data-filter="all" data-table="suppliers"><span class="label">Registered Suppliers</span><span class="value">126</span><span class="detail">Supplier accounts in authorized scope · View records ↗</span></button><button class="kpi review" data-filter="kyc" data-table="suppliers"><span class="label">Suppliers needing KYC review</span><span class="value">18</span><span class="detail">Pending, expired or needing a decision</span></button><button class="kpi" data-filter="ready" data-table="suppliers"><span class="label">Ready to supply a Market <span class="tag proposed">Proposed</span></span><span class="value">74</span><span class="detail">Verified and authorized for selected Markets</span></button><button class="kpi review" data-filter="po" data-table="suppliers"><span class="label">Orders needing attention <span class="tag proposed">Proposed</span></span><span class="value">9</span><span class="detail">Acknowledgment or delivery follow-up</span></button></div>
  <div class="two-col">
@@ -103,7 +103,7 @@ function update(){const p=page.value,isAdmin=p.endsWith('-admin'),isSuper=role.v
  document.querySelectorAll('[data-active-only]').forEach(x=>x.hidden=!approved);document.querySelectorAll('.approved-only').forEach(x=>x.classList.toggle('visible',approved));
  document.querySelectorAll('.pending-only').forEach(x=>x.classList.toggle('visible',!approved));
  if(p==='staff-admin')filterRows('staff');
- 
+ const activeView=document.getElementById(p);const controls=document.querySelector('.controls');const titleLine=activeView?.querySelector('.title-line');if(controls&&titleLine&&titleLine.nextElementSibling!==controls){titleLine.after(controls);}
 }
 function filterRows(table){const filter=activeFilters[table]||'all';let shown=0;const input=document.getElementById(table==='suppliers'?'supplier-search':'staff-search');const q=(input?.value||'').trim().toLowerCase();
  const rows=[...document.getElementById(table==='suppliers'?'supplier-rows':'staff-rows').querySelectorAll('tr')];
@@ -122,7 +122,7 @@ function showModal(type){const titles={detail:'Record detail — proposal',expor
  document.getElementById('page-switch').addEventListener('click',()=>{const opts=Object.keys(pages);page.value=opts[(opts.indexOf(page.value)+1)%opts.length];update();window.scrollTo({top:0,behavior:'smooth'})});
  document.getElementById('modal-close').addEventListener('click',()=>{modal.classList.remove('show');modal.setAttribute('aria-hidden','true')});
  modal.addEventListener('click',e=>{if(e.target===modal){modal.classList.remove('show');modal.setAttribute('aria-hidden','true')}});window.addEventListener('keydown',e=>{if(e.key==='Escape'&&modal.classList.contains('show')){modal.classList.remove('show');modal.setAttribute('aria-hidden','true')}});
- const initial=window.location.hash.slice(1);if(pages[initial])page.value=initial;
+ const initial=window.location.hash.slice(1)||(new URLSearchParams(window.location.search).get('page'));if(pages[initial])page.value=initial;
  filterRows('suppliers');update();
 })();
 </script></body></html>

@@ -1,0 +1,154 @@
+{
+  "pages": [
+    {
+      "page": "global",
+      "title": "Global Operations Dashboard",
+      "renderError": 0,
+      "dimensions": {
+        "scroll": 1440,
+        "inner": 1440
+      }
+    },
+    {
+      "page": "markets",
+      "title": "Market Intelligence",
+      "renderError": 0,
+      "dimensions": {
+        "scroll": 1440,
+        "inner": 1440
+      }
+    },
+    {
+      "page": "vendor",
+      "title": "Vendor Overview",
+      "renderError": 0,
+      "dimensions": {
+        "scroll": 1440,
+        "inner": 1440
+      }
+    },
+    {
+      "page": "facility",
+      "title": "Facility Intelligence",
+      "renderError": 0,
+      "dimensions": {
+        "scroll": 1440,
+        "inner": 1440
+      }
+    },
+    {
+      "page": "supplier",
+      "title": "Supplier Overview",
+      "renderError": 0,
+      "dimensions": {
+        "scroll": 1440,
+        "inner": 1440
+      }
+    },
+    {
+      "page": "staff",
+      "title": "Staff & Market Managers",
+      "renderError": 0,
+      "dimensions": {
+        "scroll": 1440,
+        "inner": 1440
+      }
+    },
+    {
+      "page": "gate",
+      "title": "Gate & Stock Intelligence",
+      "renderError": 0,
+      "dimensions": {
+        "scroll": 1440,
+        "inner": 1440
+      }
+    },
+    {
+      "page": "imports",
+      "title": "Vendor Import Integrity",
+      "renderError": 0,
+      "dimensions": {
+        "scroll": 1440,
+        "inner": 1440
+      }
+    },
+    {
+      "page": "requests",
+      "title": "Request Center",
+      "renderError": 0,
+      "dimensions": {
+        "scroll": 1440,
+        "inner": 1440
+      }
+    },
+    {
+      "page": "catalog",
+      "title": "KPI & Evidence Library",
+      "renderError": 0,
+      "dimensions": {
+        "scroll": 1440,
+        "inner": 1440
+      }
+    }
+  ],
+  "errors": [],
+  "overflow": [],
+  "checks": [
+    {
+      "case": "request totals equal category sum",
+      "pass": true,
+      "total": 55,
+      "categories": 55
+    },
+    {
+      "case": "category opens filtered request center",
+      "pass": true
+    },
+    {
+      "case": "request drawer",
+      "pass": true
+    },
+    {
+      "case": "filtered request csv parity",
+      "pass": true,
+      "exported": 7,
+      "matching": 7
+    },
+    {
+      "case": "facility unit type matrix drill",
+      "pass": true
+    },
+    {
+      "case": "MarketMaster scope locked",
+      "pass": true
+    },
+    {
+      "case": "MarketMaster cannot see foreign Market records",
+      "pass": true
+    },
+    {
+      "case": "MarketMaster hides SuperAdmin governance",
+      "pass": true
+    },
+    {
+      "case": "pending vendor gating",
+      "pass": true
+    },
+    {
+      "case": "pending supplier gating",
+      "pass": true
+    },
+    {
+      "case": "Stock Counter scoped navigation",
+      "pass": true
+    },
+    {
+      "case": "read-only admin banner",
+      "pass": true
+    },
+    {
+      "case": "all page render no runtime errors",
+      "pass": true
+    }
+  ]
+}
