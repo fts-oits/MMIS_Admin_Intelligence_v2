@@ -1,0 +1,1613 @@
+[
+  {
+    "id": "V01",
+    "domain": "Vendor",
+    "category": "Identity, onboarding & compliance",
+    "title": "Registered Vendor accounts and status",
+    "priority": "P0",
+    "maturity": "Foundation",
+    "drilldown": "Vendor accounts by registration status"
+  },
+  {
+    "id": "V02",
+    "domain": "Vendor",
+    "category": "Identity, onboarding & compliance",
+    "title": "Registration approvals and review time",
+    "priority": "P0",
+    "maturity": "Foundation",
+    "drilldown": "Vendor onboarding applications"
+  },
+  {
+    "id": "V03",
+    "domain": "Vendor",
+    "category": "Identity, onboarding & compliance",
+    "title": "Invitation and account-claim progress",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Invitation records and claim history"
+  },
+  {
+    "id": "V04",
+    "domain": "Vendor",
+    "category": "Identity, onboarding & compliance",
+    "title": "Email, phone and profile verification",
+    "priority": "P0",
+    "maturity": "Foundation",
+    "drilldown": "Contact verification worklist"
+  },
+  {
+    "id": "V05",
+    "domain": "Vendor",
+    "category": "Identity, onboarding & compliance",
+    "title": "KYC status, expiry and review backlog",
+    "priority": "P0",
+    "maturity": "Foundation",
+    "drilldown": "KYC evidence and reviewer actions"
+  },
+  {
+    "id": "V06",
+    "domain": "Vendor",
+    "category": "Identity, onboarding & compliance",
+    "title": "TIN and tax-compliance completeness",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Tax and compliance evidence"
+  },
+  {
+    "id": "V07",
+    "domain": "Vendor",
+    "category": "Identity, onboarding & compliance",
+    "title": "Duplicates, imports and staged promotions",
+    "priority": "P0",
+    "maturity": "New aggregation",
+    "drilldown": "Identity matching and import evidence"
+  },
+  {
+    "id": "V08",
+    "domain": "Vendor",
+    "category": "Identity, onboarding & compliance",
+    "title": "Onboarding funnel, completion and delay",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Onboarding steps and completion times"
+  },
+  {
+    "id": "V09",
+    "domain": "Vendor",
+    "category": "Tenancy, Facilities & Contracts",
+    "title": "Assigned, unassigned and multi-Market Vendors",
+    "priority": "P0",
+    "maturity": "Foundation",
+    "drilldown": "Vendor to physical Facility relationships"
+  },
+  {
+    "id": "V10",
+    "domain": "Vendor",
+    "category": "Tenancy, Facilities & Contracts",
+    "title": "Vendors by Shop, Stall, Pitch, Cage and Lock-up",
+    "priority": "P0",
+    "maturity": "Foundation",
+    "drilldown": "Unit Type attribution and Vendor records"
+  },
+  {
+    "id": "V11",
+    "domain": "Vendor",
+    "category": "Tenancy, Facilities & Contracts",
+    "title": "Vendors by rent contract status",
+    "priority": "P0",
+    "maturity": "Foundation",
+    "drilldown": "RentContract and tenancy evidence"
+  },
+  {
+    "id": "V12",
+    "domain": "Vendor",
+    "category": "Tenancy, Facilities & Contracts",
+    "title": "Facility claims and conflicting assignments",
+    "priority": "P0",
+    "maturity": "New aggregation",
+    "drilldown": "Allocation and claim decisions"
+  },
+  {
+    "id": "V13",
+    "domain": "Vendor",
+    "category": "Tenancy, Facilities & Contracts",
+    "title": "Contract acceptance and activation blockers",
+    "priority": "P0",
+    "maturity": "New aggregation",
+    "drilldown": "Contract approval and Vendor acceptance"
+  },
+  {
+    "id": "V14",
+    "domain": "Vendor",
+    "category": "Tenancy, Facilities & Contracts",
+    "title": "Contract expiry and renewal windows",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Expiry calendar and Contract history"
+  },
+  {
+    "id": "V15",
+    "domain": "Vendor",
+    "category": "Tenancy, Facilities & Contracts",
+    "title": "Approved rental tariff and Contract overrides",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Applicable rental policy and rate history"
+  },
+  {
+    "id": "V16",
+    "domain": "Vendor",
+    "category": "Tenancy, Facilities & Contracts",
+    "title": "Tenure, multiple contracts and overlaps",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Tenant history and conflicts"
+  },
+  {
+    "id": "V17",
+    "domain": "Vendor",
+    "category": "Tenancy, Facilities & Contracts",
+    "title": "Termination, clearance and Facility release",
+    "priority": "P2",
+    "maturity": "Proposed capability",
+    "drilldown": "Facility-release cases"
+  },
+  {
+    "id": "V18",
+    "domain": "Vendor",
+    "category": "Rent, billing & payments",
+    "title": "Expected contracted rent by period and Unit Type",
+    "priority": "P0",
+    "maturity": "Foundation",
+    "drilldown": "Approved contract rate and period"
+  },
+  {
+    "id": "V19",
+    "domain": "Vendor",
+    "category": "Rent, billing & payments",
+    "title": "Issued rent invoices and billing coverage",
+    "priority": "P0",
+    "maturity": "Foundation",
+    "drilldown": "Billing runs and issued invoice records"
+  },
+  {
+    "id": "V20",
+    "domain": "Vendor",
+    "category": "Rent, billing & payments",
+    "title": "Received versus applied payments and collection rate",
+    "priority": "P0",
+    "maturity": "New aggregation",
+    "drilldown": "Confirmed sources and allocations"
+  },
+  {
+    "id": "V21",
+    "domain": "Vendor",
+    "category": "Rent, billing & payments",
+    "title": "Rent still unpaid, due soon and overdue",
+    "priority": "P0",
+    "maturity": "New aggregation",
+    "drilldown": "Eligible invoice obligations"
+  },
+  {
+    "id": "V22",
+    "domain": "Vendor",
+    "category": "Rent, billing & payments",
+    "title": "Invoice status: unpaid, partial, paid, void, held",
+    "priority": "P0",
+    "maturity": "Foundation",
+    "drilldown": "Invoice evidence by status"
+  },
+  {
+    "id": "V23",
+    "domain": "Vendor",
+    "category": "Rent, billing & payments",
+    "title": "Largest balances, debt concentration and distribution",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Ranked Vendor/invoice balances"
+  },
+  {
+    "id": "V24",
+    "domain": "Vendor",
+    "category": "Rent, billing & payments",
+    "title": "Collection rate by Market, Facility and classification",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Reconciled period-matched cohort"
+  },
+  {
+    "id": "V25",
+    "domain": "Vendor",
+    "category": "Rent, billing & payments",
+    "title": "Historical arrears and aging movements",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Invoice movements and recovery evidence"
+  },
+  {
+    "id": "V26",
+    "domain": "Vendor",
+    "category": "Rent, billing & payments",
+    "title": "Billing generation failures and duplicates",
+    "priority": "P0",
+    "maturity": "New aggregation",
+    "drilldown": "Billing run and exception records"
+  },
+  {
+    "id": "V27",
+    "domain": "Vendor",
+    "category": "Rent, billing & payments",
+    "title": "Advance payments and Vendor credits",
+    "priority": "P0",
+    "maturity": "Foundation",
+    "drilldown": "Credit sources, consumption and coverage"
+  },
+  {
+    "id": "V28",
+    "domain": "Vendor",
+    "category": "Rent, billing & payments",
+    "title": "Unallocated payments, refunds and financial holds",
+    "priority": "P0",
+    "maturity": "New aggregation",
+    "drilldown": "Source-to-invoice reconciliation"
+  },
+  {
+    "id": "V29",
+    "domain": "Vendor",
+    "category": "Rent, billing & payments",
+    "title": "Receivables recovery and promises to pay",
+    "priority": "P2",
+    "maturity": "Proposed capability",
+    "drilldown": "Recovery case evidence"
+  },
+  {
+    "id": "V30",
+    "domain": "Vendor",
+    "category": "Overdue rent & collection risk",
+    "title": "Vendors overdue 1–30, 31–60, 61–90, over 90 days",
+    "priority": "P0",
+    "maturity": "Foundation",
+    "drilldown": "Invoice-based exclusive aging"
+  },
+  {
+    "id": "V31",
+    "domain": "Vendor",
+    "category": "Overdue rent & collection risk",
+    "title": "Overdue value and invoices by aging bucket",
+    "priority": "P0",
+    "maturity": "New aggregation",
+    "drilldown": "Overdue Vendor, Facility and invoice list"
+  },
+  {
+    "id": "V32",
+    "domain": "Vendor",
+    "category": "Overdue rent & collection risk",
+    "title": "Cumulative 30+, 60+ and 90+ exposure",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Cumulative aging, clearly labeled"
+  },
+  {
+    "id": "V33",
+    "domain": "Vendor",
+    "category": "Overdue rent & collection risk",
+    "title": "Repeat lateness and worsening overdue trend",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Historical aging trajectories"
+  },
+  {
+    "id": "V34",
+    "domain": "Vendor",
+    "category": "Overdue rent & collection risk",
+    "title": "Highest overdue balances and oldest invoices",
+    "priority": "P0",
+    "maturity": "New aggregation",
+    "drilldown": "Ranked debt records"
+  },
+  {
+    "id": "V35",
+    "domain": "Vendor",
+    "category": "Overdue rent & collection risk",
+    "title": "Collection restrictions and approved notices",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Approved policy and decision evidence"
+  },
+  {
+    "id": "V36",
+    "domain": "Vendor",
+    "category": "Overdue rent & collection risk",
+    "title": "Reminder eligibility, dispatch and outcomes",
+    "priority": "P2",
+    "maturity": "Proposed capability",
+    "drilldown": "Notification audit and source invoices"
+  },
+  {
+    "id": "V37",
+    "domain": "Vendor",
+    "category": "Operations, stock & engagement",
+    "title": "Operational readiness and inactive businesses",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Eligibility and access readiness"
+  },
+  {
+    "id": "V38",
+    "domain": "Vendor",
+    "category": "Operations, stock & engagement",
+    "title": "Product catalog coverage and listing quality",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Product records and classifications"
+  },
+  {
+    "id": "V39",
+    "domain": "Vendor",
+    "category": "Operations, stock & engagement",
+    "title": "Low stock, stockouts and stale inventory",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Inventory ledger evidence"
+  },
+  {
+    "id": "V40",
+    "domain": "Vendor",
+    "category": "Operations, stock & engagement",
+    "title": "Requisitions, bids and fulfillment",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Demand-to-delivery records"
+  },
+  {
+    "id": "V41",
+    "domain": "Vendor",
+    "category": "Operations, stock & engagement",
+    "title": "Gate and Stock receiving exceptions",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Verified goods custody records"
+  },
+  {
+    "id": "V42",
+    "domain": "Vendor",
+    "category": "Operations, stock & engagement",
+    "title": "Sales, baskets, growth and gross margins",
+    "priority": "P2",
+    "maturity": "Proposed capability",
+    "drilldown": "Verified POS and cost evidence only"
+  },
+  {
+    "id": "V43",
+    "domain": "Vendor",
+    "category": "Operations, stock & engagement",
+    "title": "Vendor activity and engagement history",
+    "priority": "P2",
+    "maturity": "Proposed capability",
+    "drilldown": "Approved business-event logs"
+  },
+  {
+    "id": "V44",
+    "domain": "Vendor",
+    "category": "Operations, stock & engagement",
+    "title": "Unread notices and failed communications",
+    "priority": "P2",
+    "maturity": "Proposed capability",
+    "drilldown": "Communication audit"
+  },
+  {
+    "id": "V45",
+    "domain": "Vendor",
+    "category": "Operations, stock & engagement",
+    "title": "Support cases, complaints and resolution times",
+    "priority": "P2",
+    "maturity": "Proposed capability",
+    "drilldown": "Service-case history"
+  },
+  {
+    "id": "F01",
+    "domain": "Facility",
+    "category": "Physical units & location",
+    "title": "Total rentable units and lifecycle statuses",
+    "priority": "P0",
+    "maturity": "Foundation",
+    "drilldown": "Canonical physical Facility register"
+  },
+  {
+    "id": "F02",
+    "domain": "Facility",
+    "category": "Physical units & location",
+    "title": "Units by Shop, Stall, Pitch, Cage and Lock-up",
+    "priority": "P0",
+    "maturity": "Foundation",
+    "drilldown": "Facility Type records"
+  },
+  {
+    "id": "F03",
+    "domain": "Facility",
+    "category": "Physical units & location",
+    "title": "Shop-backed units versus legacy standalone Stalls",
+    "priority": "P0",
+    "maturity": "Foundation",
+    "drilldown": "Companion/legacy reconciliation"
+  },
+  {
+    "id": "F04",
+    "domain": "Facility",
+    "category": "Physical units & location",
+    "title": "Units by Market, Level and Section",
+    "priority": "P0",
+    "maturity": "Foundation",
+    "drilldown": "Location and hierarchy"
+  },
+  {
+    "id": "F05",
+    "domain": "Facility",
+    "category": "Physical units & location",
+    "title": "Rentable area and unit-size distribution",
+    "priority": "P2",
+    "maturity": "Proposed capability",
+    "drilldown": "Measured dimensions where available"
+  },
+  {
+    "id": "F06",
+    "domain": "Facility",
+    "category": "Physical units & location",
+    "title": "Duplicate or unclassified physical records",
+    "priority": "P0",
+    "maturity": "New aggregation",
+    "drilldown": "Registry exceptions"
+  },
+  {
+    "id": "F07",
+    "domain": "Facility",
+    "category": "Occupancy & availability",
+    "title": "Occupied, vacant and reserved units",
+    "priority": "P0",
+    "maturity": "Foundation",
+    "drilldown": "Recorded registry status"
+  },
+  {
+    "id": "F08",
+    "domain": "Facility",
+    "category": "Occupancy & availability",
+    "title": "Occupancy by Market, Type, Level and Section",
+    "priority": "P0",
+    "maturity": "Foundation",
+    "drilldown": "Location-filtered Facility cohort"
+  },
+  {
+    "id": "F09",
+    "domain": "Facility",
+    "category": "Occupancy & availability",
+    "title": "Assigned, unassigned and conflicting units",
+    "priority": "P0",
+    "maturity": "Foundation",
+    "drilldown": "Unit-to-Vendor assignments"
+  },
+  {
+    "id": "F10",
+    "domain": "Facility",
+    "category": "Occupancy & availability",
+    "title": "Distinct assigned Vendors by Unit Type",
+    "priority": "P0",
+    "maturity": "Foundation",
+    "drilldown": "Vendor drilldown by same Facility population"
+  },
+  {
+    "id": "F11",
+    "domain": "Facility",
+    "category": "Occupancy & availability",
+    "title": "Allocation-ready, reserved and pending applications",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Rental applications and reservations"
+  },
+  {
+    "id": "F12",
+    "domain": "Facility",
+    "category": "Occupancy & availability",
+    "title": "Public listings and listing eligibility",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Public Shop listing records"
+  },
+  {
+    "id": "F13",
+    "domain": "Facility",
+    "category": "Occupancy & availability",
+    "title": "Long vacancies and turnover trends",
+    "priority": "P2",
+    "maturity": "Proposed capability",
+    "drilldown": "Historical occupancy events"
+  },
+  {
+    "id": "F14",
+    "domain": "Facility",
+    "category": "Occupancy & availability",
+    "title": "Inspected versus unverified physical occupancy",
+    "priority": "P2",
+    "maturity": "Proposed capability",
+    "drilldown": "Actual inspection evidence"
+  },
+  {
+    "id": "F15",
+    "domain": "Facility",
+    "category": "Contract & claim integrity",
+    "title": "Active, missing, pending and expired Contracts",
+    "priority": "P0",
+    "maturity": "Foundation",
+    "drilldown": "Facility RentContract records"
+  },
+  {
+    "id": "F16",
+    "domain": "Facility",
+    "category": "Contract & claim integrity",
+    "title": "Occupied units with missing or mismatched Contracts",
+    "priority": "P0",
+    "maturity": "New aggregation",
+    "drilldown": "Shared tenancy reconciliation cases"
+  },
+  {
+    "id": "F17",
+    "domain": "Facility",
+    "category": "Contract & claim integrity",
+    "title": "Facility claims and dispute statuses",
+    "priority": "P0",
+    "maturity": "New aggregation",
+    "drilldown": "Claim review decisions"
+  },
+  {
+    "id": "F18",
+    "domain": "Facility",
+    "category": "Contract & claim integrity",
+    "title": "Overlapping Contracts and tenant identity conflicts",
+    "priority": "P0",
+    "maturity": "New aggregation",
+    "drilldown": "Contract timeline and exceptions"
+  },
+  {
+    "id": "F19",
+    "domain": "Facility",
+    "category": "Contract & claim integrity",
+    "title": "Contract expiry and renewal calendar",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Expiring tenancy records"
+  },
+  {
+    "id": "F20",
+    "domain": "Facility",
+    "category": "Contract & claim integrity",
+    "title": "Terminations and Facility release blockers",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Clearance and termination history"
+  },
+  {
+    "id": "F21",
+    "domain": "Facility",
+    "category": "Contract & claim integrity",
+    "title": "Missing signed/accepted rental terms",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Contract document evidence"
+  },
+  {
+    "id": "F22",
+    "domain": "Facility",
+    "category": "Rent & Unit Type financial performance",
+    "title": "Expected rent by Unit Type and location",
+    "priority": "P0",
+    "maturity": "New aggregation",
+    "drilldown": "Approved rate and eligible contracts"
+  },
+  {
+    "id": "F23",
+    "domain": "Facility",
+    "category": "Rent & Unit Type financial performance",
+    "title": "Rent billed by Unit Type and month",
+    "priority": "P0",
+    "maturity": "New aggregation",
+    "drilldown": "Issued invoice attribution"
+  },
+  {
+    "id": "F24",
+    "domain": "Facility",
+    "category": "Rent & Unit Type financial performance",
+    "title": "Payments applied to Facility invoices",
+    "priority": "P0",
+    "maturity": "New aggregation",
+    "drilldown": "Confirmed allocations only"
+  },
+  {
+    "id": "F25",
+    "domain": "Facility",
+    "category": "Rent & Unit Type financial performance",
+    "title": "Rent still unpaid by Unit Type and Facility",
+    "priority": "P0",
+    "maturity": "New aggregation",
+    "drilldown": "Invoice-level remaining balance"
+  },
+  {
+    "id": "F26",
+    "domain": "Facility",
+    "category": "Rent & Unit Type financial performance",
+    "title": "Overdue 1–30, 31–60, 61–90 and over 90",
+    "priority": "P0",
+    "maturity": "New aggregation",
+    "drilldown": "Same-invoice Shop/Contract/Vendor scope"
+  },
+  {
+    "id": "F27",
+    "domain": "Facility",
+    "category": "Rent & Unit Type financial performance",
+    "title": "Collection rates and averages by Unit Type",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Aligned billed and applied amounts"
+  },
+  {
+    "id": "F28",
+    "domain": "Facility",
+    "category": "Rent & Unit Type financial performance",
+    "title": "Approved rental rate and override comparison",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Tariff/rental-policy evidence"
+  },
+  {
+    "id": "F29",
+    "domain": "Facility",
+    "category": "Rent & Unit Type financial performance",
+    "title": "Expected versus billed and billing gaps",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Eligible liability and invoice issuance"
+  },
+  {
+    "id": "F30",
+    "domain": "Facility",
+    "category": "Rent & Unit Type financial performance",
+    "title": "Held, duplicate and unreconciled financial amounts",
+    "priority": "P0",
+    "maturity": "New aggregation",
+    "drilldown": "Invoice/payment/credit/source holds"
+  },
+  {
+    "id": "F31",
+    "domain": "Facility",
+    "category": "Rent & Unit Type financial performance",
+    "title": "Rent by Level/Section and overdue hotspots",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Location-attributed invoice evidence"
+  },
+  {
+    "id": "F32",
+    "domain": "Facility",
+    "category": "Rent & Unit Type financial performance",
+    "title": "Vacancy opportunity estimates",
+    "priority": "P2",
+    "maturity": "Proposed capability",
+    "drilldown": "Explicit tariff-based hypothetical scenario"
+  },
+  {
+    "id": "F33",
+    "domain": "Facility",
+    "category": "Rent & Unit Type financial performance",
+    "title": "Renewal forecasts and rate-change projections",
+    "priority": "P2",
+    "maturity": "Proposed capability",
+    "drilldown": "Approved forecast assumptions"
+  },
+  {
+    "id": "F34",
+    "domain": "Facility",
+    "category": "Facility operations & lifecycle",
+    "title": "Open maintenance and repair requests",
+    "priority": "P2",
+    "maturity": "Proposed capability",
+    "drilldown": "Work-order system if available"
+  },
+  {
+    "id": "F35",
+    "domain": "Facility",
+    "category": "Facility operations & lifecycle",
+    "title": "Maintenance cost and repeat-failure units",
+    "priority": "P2",
+    "maturity": "Proposed capability",
+    "drilldown": "Costed repair evidence"
+  },
+  {
+    "id": "F36",
+    "domain": "Facility",
+    "category": "Facility operations & lifecycle",
+    "title": "Condition, inspection and safety ratings",
+    "priority": "P2",
+    "maturity": "Proposed capability",
+    "drilldown": "Approved inspection observations"
+  },
+  {
+    "id": "F37",
+    "domain": "Facility",
+    "category": "Facility operations & lifecycle",
+    "title": "Utilities and service interruptions",
+    "priority": "P2",
+    "maturity": "Proposed capability",
+    "drilldown": "Meter and service events"
+  },
+  {
+    "id": "F38",
+    "domain": "Facility",
+    "category": "Facility operations & lifecycle",
+    "title": "QR/Token link quality and missing associations",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Facility-aware QR and token records"
+  },
+  {
+    "id": "F39",
+    "domain": "Facility",
+    "category": "Facility operations & lifecycle",
+    "title": "Gate, delivery and Stock custody exceptions",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Goods-receipt handover records"
+  },
+  {
+    "id": "F40",
+    "domain": "Facility",
+    "category": "Facility operations & lifecycle",
+    "title": "Accessibility and service complaints",
+    "priority": "P2",
+    "maturity": "Proposed capability",
+    "drilldown": "Facility service cases"
+  },
+  {
+    "id": "F41",
+    "domain": "Facility",
+    "category": "Facility operations & lifecycle",
+    "title": "Missing Facility documents and ownership conflicts",
+    "priority": "P0",
+    "maturity": "New aggregation",
+    "drilldown": "Document registry and identity evidence"
+  },
+  {
+    "id": "S01",
+    "domain": "Supplier",
+    "category": "Registration & compliance",
+    "title": "Supplier accounts by registration status",
+    "priority": "P0",
+    "maturity": "Foundation",
+    "drilldown": "Global Supplier registry"
+  },
+  {
+    "id": "S02",
+    "domain": "Supplier",
+    "category": "Registration & compliance",
+    "title": "KYC: missing, pending, verified, rejected, expired",
+    "priority": "P0",
+    "maturity": "Foundation",
+    "drilldown": "Supplier qualification records"
+  },
+  {
+    "id": "S03",
+    "domain": "Supplier",
+    "category": "Registration & compliance",
+    "title": "TIN, tax and license compliance",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Verified compliance documentation"
+  },
+  {
+    "id": "S04",
+    "domain": "Supplier",
+    "category": "Registration & compliance",
+    "title": "Invitations and onboarding conversion",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Invitation and activation funnel"
+  },
+  {
+    "id": "S05",
+    "domain": "Supplier",
+    "category": "Registration & compliance",
+    "title": "Approved, restricted or blocked Suppliers",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Supplier authorization/eligibility"
+  },
+  {
+    "id": "S06",
+    "domain": "Supplier",
+    "category": "Registration & compliance",
+    "title": "Duplicate identities, TINs and imported Suppliers",
+    "priority": "P0",
+    "maturity": "Foundation",
+    "drilldown": "Supplier identity reconciliation"
+  },
+  {
+    "id": "S07",
+    "domain": "Supplier",
+    "category": "Registration & compliance",
+    "title": "Approval turnaround and expiry backlog",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "KYC timestamps and decisions"
+  },
+  {
+    "id": "S08",
+    "domain": "Supplier",
+    "category": "Capabilities & market coverage",
+    "title": "Supplier business types and classifications",
+    "priority": "P0",
+    "maturity": "New aggregation",
+    "drilldown": "Classification registry"
+  },
+  {
+    "id": "S09",
+    "domain": "Supplier",
+    "category": "Capabilities & market coverage",
+    "title": "Products, categories, brands and capabilities",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Supplier product catalog"
+  },
+  {
+    "id": "S10",
+    "domain": "Supplier",
+    "category": "Capabilities & market coverage",
+    "title": "Market eligibility and actual service participation",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Verified Market relationships, not registration"
+  },
+  {
+    "id": "S11",
+    "domain": "Supplier",
+    "category": "Capabilities & market coverage",
+    "title": "Geographic and delivery coverage",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Verified service-area records"
+  },
+  {
+    "id": "S12",
+    "domain": "Supplier",
+    "category": "Capabilities & market coverage",
+    "title": "No-coverage or single-source categories",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Authorized Supplier-to-demand matching"
+  },
+  {
+    "id": "S13",
+    "domain": "Supplier",
+    "category": "Capabilities & market coverage",
+    "title": "Catalog availability, MOQ and quoted lead times",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Product offer terms"
+  },
+  {
+    "id": "S14",
+    "domain": "Supplier",
+    "category": "Capabilities & market coverage",
+    "title": "Capacity and active order load",
+    "priority": "P2",
+    "maturity": "Proposed capability",
+    "drilldown": "Supplier capacity commitments"
+  },
+  {
+    "id": "S15",
+    "domain": "Supplier",
+    "category": "Requisitions & bidding",
+    "title": "Open requisitions, bid coverage and no-bid demand",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Vendor requisition queue"
+  },
+  {
+    "id": "S16",
+    "domain": "Supplier",
+    "category": "Requisitions & bidding",
+    "title": "Invited Supplier response and time",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Invitation and bid timestamps"
+  },
+  {
+    "id": "S17",
+    "domain": "Supplier",
+    "category": "Requisitions & bidding",
+    "title": "Bid submitted, rejected, accepted and withdrawn",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Bid lifecycle records"
+  },
+  {
+    "id": "S18",
+    "domain": "Supplier",
+    "category": "Requisitions & bidding",
+    "title": "Award rate and competitive success",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Award decisions, not inferred revenue"
+  },
+  {
+    "id": "S19",
+    "domain": "Supplier",
+    "category": "Requisitions & bidding",
+    "title": "Bids per requisition and single-bid awards",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Competitive sourcing evidence"
+  },
+  {
+    "id": "S20",
+    "domain": "Supplier",
+    "category": "Requisitions & bidding",
+    "title": "Comparable bid price spread and variance",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Normalized item/unit quotations"
+  },
+  {
+    "id": "S21",
+    "domain": "Supplier",
+    "category": "Requisitions & bidding",
+    "title": "Late responses and invalid quotations",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Bid validation worklist"
+  },
+  {
+    "id": "S22",
+    "domain": "Supplier",
+    "category": "Requisitions & bidding",
+    "title": "Demand by category, Market and due date",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Authorized procurement opportunities"
+  },
+  {
+    "id": "S23",
+    "domain": "Supplier",
+    "category": "Purchase orders & commitments",
+    "title": "POs by lifecycle status",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Approved PO records"
+  },
+  {
+    "id": "S24",
+    "domain": "Supplier",
+    "category": "Purchase orders & commitments",
+    "title": "Approved PO value and undelivered commitments",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "PO line items and fulfillment"
+  },
+  {
+    "id": "S25",
+    "domain": "Supplier",
+    "category": "Purchase orders & commitments",
+    "title": "PO approvals and acknowledgments pending",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Order decision history"
+  },
+  {
+    "id": "S26",
+    "domain": "Supplier",
+    "category": "Purchase orders & commitments",
+    "title": "Requisition-to-PO and award-to-PO conversion",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Linked document timestamps"
+  },
+  {
+    "id": "S27",
+    "domain": "Supplier",
+    "category": "Purchase orders & commitments",
+    "title": "Delivery commitments due and overdue",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "PO promised dates"
+  },
+  {
+    "id": "S28",
+    "domain": "Supplier",
+    "category": "Purchase orders & commitments",
+    "title": "PO amendments and price/quantity changes",
+    "priority": "P2",
+    "maturity": "Proposed capability",
+    "drilldown": "Approved revision history"
+  },
+  {
+    "id": "S29",
+    "domain": "Supplier",
+    "category": "Purchase orders & commitments",
+    "title": "Purchase frequency, repeat orders and concentration",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "PO populations"
+  },
+  {
+    "id": "S30",
+    "domain": "Supplier",
+    "category": "Delivery, Gate & Stock",
+    "title": "Deliveries by dispatch, arrival and acceptance",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Delivery lifecycle evidence"
+  },
+  {
+    "id": "S31",
+    "domain": "Supplier",
+    "category": "Delivery, Gate & Stock",
+    "title": "On-time delivery rate and late days",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Promised date versus verified receipt"
+  },
+  {
+    "id": "S32",
+    "domain": "Supplier",
+    "category": "Delivery, Gate & Stock",
+    "title": "In-full delivery rate and quantity variance",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Ordered versus accepted lines"
+  },
+  {
+    "id": "S33",
+    "domain": "Supplier",
+    "category": "Delivery, Gate & Stock",
+    "title": "On-Time In-Full (OTIF) by Supplier",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Eligible due PO lines and complete receipts"
+  },
+  {
+    "id": "S34",
+    "domain": "Supplier",
+    "category": "Delivery, Gate & Stock",
+    "title": "Gate access and token verification exceptions",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Gate and QR/token events"
+  },
+  {
+    "id": "S35",
+    "domain": "Supplier",
+    "category": "Delivery, Gate & Stock",
+    "title": "Gate accepted but not Stock verified",
+    "priority": "P0",
+    "maturity": "New aggregation",
+    "drilldown": "Custody handover and receipt gaps"
+  },
+  {
+    "id": "S36",
+    "domain": "Supplier",
+    "category": "Delivery, Gate & Stock",
+    "title": "Damage, rejection and shortages",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Goods acceptance/quality events"
+  },
+  {
+    "id": "S37",
+    "domain": "Supplier",
+    "category": "Delivery, Gate & Stock",
+    "title": "Receiving time and recurring custody errors",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Verified gate-to-stock event timestamps"
+  },
+  {
+    "id": "S38",
+    "domain": "Supplier",
+    "category": "Delivery, Gate & Stock",
+    "title": "Goods accepted but Vendor stock not reconciled",
+    "priority": "P0",
+    "maturity": "New aggregation",
+    "drilldown": "Receipt versus inventory ledger"
+  },
+  {
+    "id": "S39",
+    "domain": "Supplier",
+    "category": "Delivery, Gate & Stock",
+    "title": "Supplier returns and dispute resolution",
+    "priority": "P2",
+    "maturity": "Proposed capability",
+    "drilldown": "Approved returns workflow"
+  },
+  {
+    "id": "S40",
+    "domain": "Supplier",
+    "category": "Invoices, settlement & spend",
+    "title": "Approved PO, received, invoiced and paid value",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Linked PO, receipt, invoice and settlement"
+  },
+  {
+    "id": "S41",
+    "domain": "Supplier",
+    "category": "Invoices, settlement & spend",
+    "title": "Supplier invoices by approval status",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Accounts payable invoice records"
+  },
+  {
+    "id": "S42",
+    "domain": "Supplier",
+    "category": "Invoices, settlement & spend",
+    "title": "Amount payable, due soon and overdue",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Verified payable ledger"
+  },
+  {
+    "id": "S43",
+    "domain": "Supplier",
+    "category": "Invoices, settlement & spend",
+    "title": "Settlement pending, confirmed, failed or reversed",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Confirmed payment evidence"
+  },
+  {
+    "id": "S44",
+    "domain": "Supplier",
+    "category": "Invoices, settlement & spend",
+    "title": "Invoice, PO and goods receipt matching",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Three-way match exceptions"
+  },
+  {
+    "id": "S45",
+    "domain": "Supplier",
+    "category": "Invoices, settlement & spend",
+    "title": "Purchase spend by Market and category",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Accounting-approved spend basis"
+  },
+  {
+    "id": "S46",
+    "domain": "Supplier",
+    "category": "Invoices, settlement & spend",
+    "title": "Price variance and comparable savings",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Comparable item price evidence"
+  },
+  {
+    "id": "S47",
+    "domain": "Supplier",
+    "category": "Invoices, settlement & spend",
+    "title": "Tax and fiscal-document completeness",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Approved VAT and tax evidence"
+  },
+  {
+    "id": "S48",
+    "domain": "Supplier",
+    "category": "Invoices, settlement & spend",
+    "title": "Payment days, timing and discounts",
+    "priority": "P2",
+    "maturity": "Proposed capability",
+    "drilldown": "Payables settlement events"
+  },
+  {
+    "id": "S49",
+    "domain": "Supplier",
+    "category": "Invoices, settlement & spend",
+    "title": "Landed cost and category cost breakdown",
+    "priority": "P2",
+    "maturity": "Proposed capability",
+    "drilldown": "Delivery/tax/cost evidence"
+  },
+  {
+    "id": "S50",
+    "domain": "Supplier",
+    "category": "Performance & supplier risk",
+    "title": "Transparent Supplier quality, price and delivery score",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Weighted score with source and sample sizes"
+  },
+  {
+    "id": "S51",
+    "domain": "Supplier",
+    "category": "Performance & supplier risk",
+    "title": "Top and low-performing Suppliers by evidence",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Verifiable fulfillment and delivery records"
+  },
+  {
+    "id": "S52",
+    "domain": "Supplier",
+    "category": "Performance & supplier risk",
+    "title": "Single-source and Supplier concentration risk",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Approved PO/category participation"
+  },
+  {
+    "id": "S53",
+    "domain": "Supplier",
+    "category": "Performance & supplier risk",
+    "title": "Explainable high-risk Supplier worklist",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Repeated delay, quality and compliance issues"
+  },
+  {
+    "id": "S54",
+    "domain": "Supplier",
+    "category": "Performance & supplier risk",
+    "title": "Disputes, complaints and resolution rates",
+    "priority": "P2",
+    "maturity": "Proposed capability",
+    "drilldown": "Service and procurement cases"
+  },
+  {
+    "id": "S55",
+    "domain": "Supplier",
+    "category": "Performance & supplier risk",
+    "title": "Acknowledgments and communication outcomes",
+    "priority": "P2",
+    "maturity": "Proposed capability",
+    "drilldown": "Audited Supplier messages"
+  },
+  {
+    "id": "S56",
+    "domain": "Supplier",
+    "category": "Performance & supplier risk",
+    "title": "Sustainability and business credentials",
+    "priority": "P2",
+    "maturity": "Proposed capability",
+    "drilldown": "Verified qualification documents"
+  },
+  {
+    "id": "S57",
+    "domain": "Supplier",
+    "category": "Performance & supplier risk",
+    "title": "Supplier retention and historical activity",
+    "priority": "P2",
+    "maturity": "Proposed capability",
+    "drilldown": "Longitudinal procurement evidence"
+  },
+  {
+    "id": "C01",
+    "domain": "Cross-domain",
+    "category": "Operational convergence",
+    "title": "Approved Vendors without Facility assignments",
+    "priority": "P0",
+    "maturity": "New aggregation",
+    "drilldown": "Approved Vendor vs physical Facility"
+  },
+  {
+    "id": "C02",
+    "domain": "Cross-domain",
+    "category": "Operational convergence",
+    "title": "Occupied units without valid RentContracts",
+    "priority": "P0",
+    "maturity": "New aggregation",
+    "drilldown": "Facility registry vs active Contract"
+  },
+  {
+    "id": "C03",
+    "domain": "Cross-domain",
+    "category": "Operational convergence",
+    "title": "Contracted Vendors without generated rent invoices",
+    "priority": "P0",
+    "maturity": "New aggregation",
+    "drilldown": "Tenancy obligations vs billing evidence"
+  },
+  {
+    "id": "C04",
+    "domain": "Cross-domain",
+    "category": "Operational convergence",
+    "title": "Rent owed by Shop, Stall, Pitch, Cage and Lock-up",
+    "priority": "P0",
+    "maturity": "New aggregation",
+    "drilldown": "Same invoice/Contract/Facility relationship"
+  },
+  {
+    "id": "C05",
+    "domain": "Cross-domain",
+    "category": "Operational convergence",
+    "title": "Vendors with multiple unpaid Facilities",
+    "priority": "P0",
+    "maturity": "New aggregation",
+    "drilldown": "Vendor debt by qualified Contract and unit"
+  },
+  {
+    "id": "C06",
+    "domain": "Cross-domain",
+    "category": "Operational convergence",
+    "title": "High-rent units with persistent arrears",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Facility rate and invoice aging"
+  },
+  {
+    "id": "C07",
+    "domain": "Cross-domain",
+    "category": "Operational convergence",
+    "title": "Vacant Facilities with verified pending demand",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Vacancy and approved rental applications"
+  },
+  {
+    "id": "C08",
+    "domain": "Cross-domain",
+    "category": "Operational convergence",
+    "title": "Vendor stockouts and procurement demand",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Inventory alerts and requisition records"
+  },
+  {
+    "id": "C09",
+    "domain": "Cross-domain",
+    "category": "Operational convergence",
+    "title": "Requisitions without qualifying Supplier bids",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Demand and Supplier eligibility"
+  },
+  {
+    "id": "C10",
+    "domain": "Cross-domain",
+    "category": "Operational convergence",
+    "title": "Accepted orders with late Supplier delivery",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "PO promise versus verified receipt"
+  },
+  {
+    "id": "C11",
+    "domain": "Cross-domain",
+    "category": "Operational convergence",
+    "title": "Gate-verified goods lacking Stock receipt",
+    "priority": "P0",
+    "maturity": "New aggregation",
+    "drilldown": "Gate and Stock custody chain"
+  },
+  {
+    "id": "C12",
+    "domain": "Cross-domain",
+    "category": "Operational convergence",
+    "title": "Received goods missing Vendor inventory posting",
+    "priority": "P0",
+    "maturity": "New aggregation",
+    "drilldown": "Goods receipt vs inventory ledger"
+  },
+  {
+    "id": "C13",
+    "domain": "Cross-domain",
+    "category": "Operational convergence",
+    "title": "Suppliers with repeated rejected goods",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Inspection/receiving quality"
+  },
+  {
+    "id": "C14",
+    "domain": "Cross-domain",
+    "category": "Operational convergence",
+    "title": "Vendor purchases awaiting approved settlement",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Vendor and Supplier PO/payable evidence"
+  },
+  {
+    "id": "C15",
+    "domain": "Cross-domain",
+    "category": "Operational convergence",
+    "title": "Overdue rent receivables versus Supplier payables",
+    "priority": "P0",
+    "maturity": "New aggregation",
+    "drilldown": "Separate AR/AP ledgers with no netting"
+  },
+  {
+    "id": "C16",
+    "domain": "Cross-domain",
+    "category": "Operational convergence",
+    "title": "Markets depending on a single Supplier category",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Approved PO and category spend"
+  },
+  {
+    "id": "C17",
+    "domain": "Cross-domain",
+    "category": "Operational convergence",
+    "title": "Supplier failures affecting multiple Vendors",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Delivery-quality and affected Vendors"
+  },
+  {
+    "id": "C18",
+    "domain": "Cross-domain",
+    "category": "Operational convergence",
+    "title": "Unverified KYC linked to active transactions",
+    "priority": "P0",
+    "maturity": "New aggregation",
+    "drilldown": "Identity compliance and audited activity"
+  },
+  {
+    "id": "C19",
+    "domain": "Cross-domain",
+    "category": "Operational convergence",
+    "title": "Cross-Market Vendor/Facility/Contract identity conflicts",
+    "priority": "P0",
+    "maturity": "New aggregation",
+    "drilldown": "Market-scoped assignment reconciliation"
+  },
+  {
+    "id": "C20",
+    "domain": "Cross-domain",
+    "category": "Operational convergence",
+    "title": "Financial records requiring review",
+    "priority": "P0",
+    "maturity": "New aggregation",
+    "drilldown": "Invoice, allocation, credit and refund source"
+  },
+  {
+    "id": "C21",
+    "domain": "Cross-domain",
+    "category": "Operational convergence",
+    "title": "Missing rent fiscal/VAT evidence",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Invoice and approved fiscal status"
+  },
+  {
+    "id": "C22",
+    "domain": "Cross-domain",
+    "category": "Operational convergence",
+    "title": "Public Shop listing conflicts with recorded occupancy",
+    "priority": "P0",
+    "maturity": "New aggregation",
+    "drilldown": "Public listing and canonical occupancy"
+  },
+  {
+    "id": "C23",
+    "domain": "Cross-domain",
+    "category": "Operational convergence",
+    "title": "Approved Vendors delayed in Contract activation",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Approval-to-tenancy completion funnel"
+  },
+  {
+    "id": "C24",
+    "domain": "Cross-domain",
+    "category": "Operational convergence",
+    "title": "Market readiness from verified component evidence",
+    "priority": "P2",
+    "maturity": "Proposed capability",
+    "drilldown": "Vendor, Facility, Supplier, staff and Finance"
+  },
+  {
+    "id": "M01",
+    "domain": "Staff",
+    "category": "Management and coverage",
+    "title": "Assigned MarketMasters by Market",
+    "priority": "P0",
+    "maturity": "New aggregation",
+    "drilldown": "Authorized manager assignment records"
+  },
+  {
+    "id": "M02",
+    "domain": "Staff",
+    "category": "Management and coverage",
+    "title": "Market coverage gaps and unassigned Markets",
+    "priority": "P0",
+    "maturity": "New aggregation",
+    "drilldown": "Market and manager assignment"
+  },
+  {
+    "id": "M03",
+    "domain": "Staff",
+    "category": "Management and coverage",
+    "title": "Active and suspended staff accounts",
+    "priority": "P0",
+    "maturity": "New aggregation",
+    "drilldown": "Role-aware staff identity records"
+  },
+  {
+    "id": "M04",
+    "domain": "Staff",
+    "category": "Management and coverage",
+    "title": "Gate staff per assigned Market or location",
+    "priority": "P0",
+    "maturity": "New aggregation",
+    "drilldown": "Market-scoped Gate staff assignments"
+  },
+  {
+    "id": "M05",
+    "domain": "Staff",
+    "category": "Management and coverage",
+    "title": "Staff role and permission discrepancies",
+    "priority": "P0",
+    "maturity": "New aggregation",
+    "drilldown": "RBAC scope and identity audit"
+  },
+  {
+    "id": "M06",
+    "domain": "Staff",
+    "category": "Management and coverage",
+    "title": "Gate versus Stock handover coverage",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Authorized duty assignments and custody events"
+  },
+  {
+    "id": "M07",
+    "domain": "Staff",
+    "category": "Management and coverage",
+    "title": "Shift coverage and attendance evidence",
+    "priority": "P2",
+    "maturity": "Proposed capability",
+    "drilldown": "Approved shift/check-in events"
+  },
+  {
+    "id": "M08",
+    "domain": "Staff",
+    "category": "Management and coverage",
+    "title": "Pending staff invitations and account claims",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Invitation and account enrollment"
+  },
+  {
+    "id": "M09",
+    "domain": "Staff",
+    "category": "Management and coverage",
+    "title": "Expiring staff permissions and assignments",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Authorization timeline"
+  },
+  {
+    "id": "M10",
+    "domain": "Staff",
+    "category": "Management and coverage",
+    "title": "Staff approvals and onboarding SLA",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Role activation history"
+  },
+  {
+    "id": "M11",
+    "domain": "Staff",
+    "category": "Management and coverage",
+    "title": "Staff action/audit backlog",
+    "priority": "P1",
+    "maturity": "New aggregation",
+    "drilldown": "Authorized review and audit events"
+  },
+  {
+    "id": "M12",
+    "domain": "Staff",
+    "category": "Management and coverage",
+    "title": "Staff incident resolution and workload",
+    "priority": "P2",
+    "maturity": "Proposed capability",
+    "drilldown": "Approved cases, timestamps and assignment"
+  }
+]
