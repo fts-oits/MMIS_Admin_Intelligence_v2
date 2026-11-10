@@ -1,68 +1,83 @@
-# MarketMaster MMIS — Intelligence Suite V5
+# V6.1 functional corrections — START HERE
 
-**Deliverable:** Complete, fully offline interactive design prototype, dated 2026-11-10.
+**This is the corrected PM demo revision.** Open `README_V6_1_START_HERE.md` first. Use `index.html` to run the updated 19-workspace demo, `V6_1_FIX_VERIFICATION_REPORT.md` for before/after findings, and `previews/v6_1_functional/` for new screenshots. The original V6 design notes below are retained as historical baseline context. This is a synthetic, read-only/no-posting prototype; Finance and production acceptance remain on HOLD.
 
-## Open the preview
+---
 
-1. Unzip this package into a normal folder.
-2. Double-click **`index.html`** in Chrome or Edge. This is the COMPLETE V5 application launcher; it does not require internet, a server, NPM, GitHub or an MMIS login.
-3. Use the **Role** selector in the upper toolbar to preview SuperAdmin, MarketMaster, read-only Admin, approved/pending Vendor, approved/pending Supplier, Gate Staff and Stock Counter experiences.
-4. SuperAdmin can choose `All Markets` or an individual Market. MarketMaster and operations staff are restricted to their illustrative assigned Market.
-5. Click any active KPI, request category, Unit Type, record row or **Details** to inspect a filtered list or evidence drawer. Export the filtered example dataset as CSV.
+# MarketMaster MMIS · Enterprise Intelligence V6.1 (Functional Corrections)
 
-**If an in-chat HTML preview is blank:** download the ZIP, use **Extract All**, and open `index.html` in a desktop browser. All styles, scripts, sample data and KPI definitions are embedded in this single HTML file. There are no missing runtime assets or external dependencies.
+## Corrected PM Functional Review Demo — 10 November 2026
 
-## What's in V5
+This is a **complete, interactive, fully offline UI prototype** for product-management review. Its appearance reflects the prior V5 design, the 179-family intelligence catalog, and the consolidated 29-reference shadcn/TanStack design-system research.
 
-V5 contains twelve navigable destinations (nine administrative workspaces, two account-specific business workspaces, and the KPI evidence library):
+**Open the demo:** Unzip `MMIS_V6_1_Functional_Corrections_PM_Review_2026-11-10.zip` and double-click `index.html` in Chrome or Edge. No Node, NPM, build command, web server, authentication, internet connection, third-party font, or external CSS/JS is required. The entire application, sample data, styles and interactions are embedded in `index.html`. The top-level ZIP includes the complete launcher and documentation.
 
-| Workspace | Functionality in offline V5 |
-|---|---|
-| 1. Global Operations Dashboard | Four headline KPIs, unified Request Center counts, exceptions, Market comparison and domain shortcuts |
-| 2. Market Intelligence | Market Registry, capacity, occupancy, finance and manager/readiness comparisons |
-| 3. Vendor Overview | Registration/KYC/tenancy, rent billed, verified invoice allocations, unpaid debt, aging and Vendor drill-down |
-| 4. Facility Intelligence | Physical-unit counts, Shop/Stall/Pitch/Cage/Lock-up matrix, occupancy, Contracts, invoice attribution, gaps |
-| 5. Supplier Overview | Qualification, Market coverage, procurement stages, POs, late commitments, quality and delivery evidence |
-| 6. Staff & Managers | Role scope, assignments, staff restrictions, MarketMaster coverage, work owner concepts |
-| 7. Gate & Stock Intelligence | Token stages, Stock reconciliation, custody/quantity variance and fiscal evidence context |
-| 8. Vendor Import Integrity | Import stage distribution, blocked records, review, consolidation and provenance |
-| 9. Request Center | Eight request categories, open/overdue/mine/unassigned queues, priority, filter/search, evidence drawer, export |
-| 10. My Vendor Business | Approved Vendor: own financial/Stock/Supply view; pending Vendor: onboarding and rental journey only |
-| 11. My Supplier Business | Approved Supplier: own POs and delivery evidence; pending Supplier: qualification journey only |
-| 12. KPI & Evidence Library | All **179 approved groups**: Vendor 45, Facility 41, Supplier 57, Cross-domain 24, Staff 12 |
+### Your first 10-minute product-management walkthrough
 
-### Enhanced from V4
+1. Start on **Global Operations**. Review 4 executive cards, the distinct Requests Awaiting Action count, the 8 request categories, and the operational exceptions panel.
+2. Click **Rental applications** in the Request chart. Confirm the Request Center opens filtered to the exact matching cases. Review a case drawer and export its filtered CSV; filters use the same population as the displayed matching-row count.
+3. Open **Facility Intelligence**. Review the five-Unit-Type rent performance matrix. Click `SHOP`, and use the physical-unit table filters. Open a Unit and see its Vendor, recorded occupation, RentContract and invoice allocations.
+4. Open **Vendor Overview**. Click `61–90 days` to filter the Vendor investigation table, then inspect Vendor, facilities, contract and money evidence. Separate verified invoice allocations from liability and overdue balances.
+5. Open **Supplier Intelligence**. Switch between qualified Supplier records and Purchase Orders, then inspect PO-linked Gate/Stock status. A bid/PO/Gate admission is never automatically an accepted receipt or settlement.
+6. Open **Rental Readiness**. Select one or more Facilities and choose `Preview selected`. It must display **READ-ONLY / NEVER POST**, including the unresolved MMIS-881 Finance HOLD. There are no financial mutation buttons.
+7. Open **RBAC Governance**. Switch personas using the header: MarketMaster, read-only Admin, pending/active Vendor, pending/active Supplier, Gate Staff and Stock Counter. The sidebar narrows to each persona's allowed demonstration pages. **This is a visual simulation, not actual security enforcement.**
+8. Choose **Pending Vendor**, open **Public Shop Finder**, and verify that the public page's header retains account identity, Notifications and Logout—without Sign In. The first-login dashboard does not provide Inventory, Invoices or Payments navigation.
+9. Open **Design System**, check MMIS Base Vega theme tokens, compact density and dark-mode variants. Review the 29-reference adoption decisions in the architecture notes.
+10. Open **PM Approval**, check the desired design decisions and export the **local feedback JSON**. This does not update GitHub, Linear or production MMIS.
 
-- New dedicated Market Intelligence, Import Intelligence and Gate/Stock Intelligence.
-- One shared navigation, role switcher and Market scope instead of independent disconnected previews.
-- Distinct **requests awaiting action** and **operational exceptions**; categories sum to the same unique open case total.
-- Record-level evidence drawers for Markets, Vendors, Facilities, Suppliers, staff, imports, POs, Gate tokens, request cases and KPIs.
-- Unit Type Financial Matrix attributes invoices to Shop-backed physical units and distinguishes distinct Vendors from physical-unit counts.
-- End-to-end sample Supplier → PO → Gate → Stock custody references.
-- Filtered full-population CSV export, without needing a remote API.
-- Approved and pending Vendor/Supplier dashboards with an explicit restricted experience.
-- 34 actual browser screenshots in `previews/`; desktop and mobile views.
-- The previous self-contained V4 pages are retained in `V4_Approved_Reference/` for visual comparison.
+### Included interactive workspaces (17 primary workspaces + 2 scenario destinations)
 
-## Evidence warnings
+Global Operations; Request Center; Market Intelligence; Vendor Overview; Facility Intelligence; Supplier Intelligence; Finance & Evidence; Staff & MarketMasters; RBAC Governance; Import Integrity; Gate & Stock; Rental Readiness; Public Shop Finder; My Workspace (role-specific); 179 KPI Library; Design System; and PM Approval.
 
-**All names, business transactions, Market names, financial numbers, Counts, cases, POs, payments and statuses in V5 are fictional demonstration data.** A same-source, deterministic local dataset is used for internally consistent interactions; it is **not** the live MMIS database, a real account, or a legally/financially certified report.
+### Other interactive features
 
-The current `dev_basic` code has genuine domain workflows, but not every V5 metric is backed by a production aggregation endpoint. See `V5_ENGINEERING_CONTRACT.md` and `V5_SOURCE_MAPPING.md`. Mock clickable actions only show proposed paths; they do **not** execute approvals, mutate records, call an MMIS API, create an email, or submit financial documents.
+- SuperAdmin can switch All Markets / Kabale / Mbarara / Gulu / Lira. MarketMaster and other roles have fixed illustrative Market scope.
+- Header role selector with 10 demo personas (including unauthenticated guest).
+- Market-scoped filterable, sortable, offset-paginated data tables (10 rows/page) and all-filtered CSV export.
+- Clickable KPI/Unit Type/request category drilling to the exact example population; evidence/detail drawers; keyboard Escape to dismiss; `/` to focus worklist search; dark-mode and density toggles.
+- Source-appropriate warning states for missing/historical/held data and Finance decisions.
+- Exportable PM design decisions (JSON) — browser-only and local, without automatic upload.
+- A consistent fixed as-of date, `2026-11-10`. Financial and request numbers are deterministic and internally computed from one sample dataset.
+
+## What V6.1 fixes beyond the approved original V6
+
+The six P0 PM audit findings have been corrected **in this fictional offline prototype**: exact Facility 13/13 and Import 12/12 KPI drilldowns; invoice-based Vendor 61–90 bands and Shop+aging filtered export; guest-to-login Shop retention and a trackable rental application/approval/Contract-acceptance simulation; non-posting rental policy/version/collision/first-liability preflight; Request Center assignments/status/timeline/notification inbox; Supplier→PO→Gate→Stock→receipt role-driven simulation; browser history and effective-permission explanation.
+
+Open the **Vendor application flow** and **Supplier custody flow** scenario destinations from the relevant buttons. These are the two additional renderable pages beyond the primary 17 navigation destinations.
+
+The entire corrected suite was rerun: **177/177 baseline browser checks, 34/34 functional scenario checks and 16/16 financial/filter/RBAC checks** passed (some assertions overlap). See `FIXES_ACCEPTANCE_REPORT.md` for exact reconciled cohorts, screenshots and explicit production HOLD boundaries.
+
+### New PM review artifacts
+
+- `FIXES_ACCEPTANCE_REPORT.md` — verified six-fix traceability and 10-step PM walkthrough.
+- `QA_RESULTS_FUNCTIONAL.json` and `QA_RESULTS_EXTRA.json` — independent-focused rerun results.
+- `previews/fix_01_...png` through `fix_14_...png` — before/after-targeted screenshots of actual corrected flows.
+- `qa/browser_functional_playwright.py` and `qa/browser_financial_parity_playwright.py` — optional rerunnable browser tests.
+
+## Important distinction: design approval vs implementation
+
+**All persons, Markets, vendors, physical units, rent amounts, purchase orders, request cases, Supplier identities, staff assignments, and statuses shown in the prototype are fictional, deterministic demonstration values.** They must not be used as MMIS accounting reports, evidence of legal tenancy, a real KYC decision, government compliance or live application data.
+
+The prototype contains **no API calls, no external resources, no authentication, no PostgreSQL access, no writes, no fiscal API or payments, and no invoice generation**. Buttons only navigate within the sample UI, export the local sample, or open illustrative evidence dialogs. Role restrictions in this file are NOT an authorization mechanism; production authorization must be enforced by MarketMasterApi.
+
+Current V6 production-code progress is separate. **MarketMasterERP PR #372** (`feat/mmis-v6-intelligence-ui-foundation-20261110`) is a Draft, scoped to evidence-safe UI/reporting primitives. It does not contain every dashboard in this package, nor does it authorize Finance posting. MMIS-881 API #545 / ERP #366 and historical carry-forward policy remain HOLD pending separate technical, Finance and release approval.
 
 ## Package structure
 
-- `index.html` — **fully self-contained V5 interactive application**.
-- `KPI_CATALOG_V5.json` — 179 grouped KPI definitions with priority, maturity and drill-down descriptions.
-- `V5_SOURCE_MAPPING.md` — mapping to current MMIS operational pages and implementation status.
-- `V5_ENGINEERING_CONTRACT.md` — integration, data, filtering, reconciliation, RBAC and acceptance requirements.
-- `V5_PM_REVIEW_CHECKLIST.md` — product/design approval checklist.
-- `V5_QA_REPORT.md`, `QA_RESULTS.json`, `MATRIX_QA_RESULTS.json` — browser QA evidence.
-- `engineering_source/` — optional editable development sources (NOT required to run `index.html`).
-- `qa/` — reproducible Chromium/Playwright smoke scripts, optional.
-- `previews/` — actual V5 desktop/mobile screenshots.
-- `V4_Approved_Reference/` — existing approved V4 offline prototype pages.
+- `index.html` — **standalone, self-contained application**. Only file required for preview.
+- `KPI_CATALOG_179.json` — 179 grouped KPI definitions (45 Vendor + 41 Facility + 57 Supplier + 24 cross-domain + 12 Staff). These are candidate definitions, not 179 implemented API endpoints.
+- `PM_APPROVAL_CHECKLIST.md` — recommended review gates and decision points.
+- `ARCHITECTURE_AND_SOURCE_ALIGNMENT.md` — consolidated source decisions and MMIS integration boundaries.
+- `IMPLEMENTATION_HANDOFF.md` — specific implementation phases, endpoint expectations and acceptance tests.
+- `previews/` — original 45 Chromium screenshots plus 14 corrected-journey screenshots.
+- `qa/BROWSER_QA_MATRIX.json` — machine-readable 177-test expanded browser QA report.
+- `qa/SMOKE_REPORT.json` — smoke-run screenshots, interactive testing results.
+- `source/` — readable source and deterministic fictional JSON data. These are optional; runtime uses only `index.html`.
+- `PACKAGE_MANIFEST.json` — verified file checksums and sizes.
+- `FIXES_CONTACT_SHEET.png` — overview of correction-specific screenshots.
 
-## Governance and publication
+## Security, license and delivery boundaries
 
-No live MMIS backend or frontend code, production database, GitHub branch, Pull Request, workflow, or Linear issue was changed. Do not alter the `dev`, `main`, `dev_basic` or `staging` branches of either application repository for convergence/testing. Use dedicated purpose-built branches, local/manual validation, and evidence-first acceptance. The separate design repository `fts-pro/mmis-intel-dashboards-v2` was not changed: the previously encountered GitHub connector 403 write restriction was not bypassed.
+No third-party template code, paid shadcn Pro content, authentication key, MarketMaster credential, production database string, or external library was copied into the standalone prototype. Its aesthetic takes inspiration from approved open-code dashboard conventions; all HTML/CSS/JS was freshly authored for MMIS's review needs.
+
+The user-defined project rule remains: do not modify `main`, `dev`, `dev_basic`, or `staging` directly in MarketMasterERP or MarketMasterApi. Use purpose-built feature branches for any production implementation, with exact-head builds/tests, native PostgreSQL testing, authenticated browser UAT, business/Finance approval, and deployment-host isolation. No workflow files are added.

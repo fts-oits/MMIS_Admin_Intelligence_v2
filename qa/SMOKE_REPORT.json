@@ -1,0 +1,24 @@
+{
+  "pages": [
+    "global",
+    "requests",
+    "markets",
+    "vendors",
+    "facilities",
+    "suppliers",
+    "finance",
+    "staff",
+    "roles",
+    "imports",
+    "gate",
+    "rental",
+    "journey",
+    "supply-journey",
+    "shop-finder",
+    "my-business",
+    "library",
+    "design",
+    "review"
+  ],
+  "failures": []
+}

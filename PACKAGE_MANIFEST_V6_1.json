@@ -1,0 +1,637 @@
+{
+  "version": "MMIS-V6.1-functional-demo",
+  "baseline": "MMIS V6 PM approved visual design",
+  "snapshot": "2026-11-10",
+  "entrypoint": "index.html",
+  "liveIntegration": false,
+  "financePosting": "DISABLED_HOLD",
+  "sourceOfTruth": "synthetic demo",
+  "tests": {
+    "browserMatrix": "177/177",
+    "functional": "34/34",
+    "extra": "16/16",
+    "javascriptExceptions": 0
+  },
+  "assets": [
+    {
+      "file": "ACCEPTANCE_TEST_MATRIX.csv",
+      "bytes": 3828,
+      "sha256": "83bc0e7530d40962b8b304d057c903c329c83ed9604f9519d3857d3c710ae85a"
+    },
+    {
+      "file": "ARCHITECTURE_AND_SOURCE_ALIGNMENT.md",
+      "bytes": 5770,
+      "sha256": "dec9e615f5b7517f23816d6e8f61f3a5f383c262f537403a13f4fbcd541d6685"
+    },
+    {
+      "file": "FIXES_ACCEPTANCE_REPORT.md",
+      "bytes": 10086,
+      "sha256": "de51aa48f5d8bf076ba51f1259be02768f3f5f6841cff4f79fbbc90791815de8"
+    },
+    {
+      "file": "FIXES_CONTACT_SHEET.png",
+      "bytes": 761098,
+      "sha256": "8eb8b75fd43609cb588953ec5513446f24bd4ba642dbea20676531beb3921349"
+    },
+    {
+      "file": "IMPLEMENTATION_HANDOFF.md",
+      "bytes": 5923,
+      "sha256": "071f93e85ad061bff9c327ecabd9d05f088bcb81083b3a6377756506a9097e84"
+    },
+    {
+      "file": "KPI_CATALOG_179.json",
+      "bytes": 80150,
+      "sha256": "299fce835ffc8f6b295692fced069348064c780b7ebc22f8b7955c5ca3e81351"
+    },
+    {
+      "file": "PACKAGE_MANIFEST.json",
+      "bytes": 21872,
+      "sha256": "d9b1f36af166b20c9b372add527451506ce0ed145fa176047510f2864f2b3061"
+    },
+    {
+      "file": "PM_APPROVAL_CHECKLIST.md",
+      "bytes": 4330,
+      "sha256": "3850d64f8dc0fff6111ab3b7f37b63feb6e153fad89d10f461ffa0e276094730"
+    },
+    {
+      "file": "QA_RESULTS_EXTRA.json",
+      "bytes": 1707,
+      "sha256": "c7be70f0ad4c5a01be0f5c2515c07694339fd1ffa4413e7c7f1e423026857121"
+    },
+    {
+      "file": "QA_RESULTS_FUNCTIONAL.json",
+      "bytes": 3712,
+      "sha256": "6e0cc191f6f8665a6cec3d444803417731fe8239adf6ac381f45f5f9e98e1bb5"
+    },
+    {
+      "file": "QA_SUMMARY.md",
+      "bytes": 1109,
+      "sha256": "d791751cb784920e5af6c81abb5708e57da7df1af1a385eb3f7edc0d1a85fc58"
+    },
+    {
+      "file": "README_START_HERE.md",
+      "bytes": 9625,
+      "sha256": "af95619a85486307be75a442c30e1f31c5cd8773536502e76d4f12308ca9826d"
+    },
+    {
+      "file": "README_V6_1_START_HERE.md",
+      "bytes": 6920,
+      "sha256": "d3061b0c57efbeb29aeebaab1edefcb50bf86885e9081523a56171bc37d4b8d8"
+    },
+    {
+      "file": "V6_1_FIX_VERIFICATION_REPORT.md",
+      "bytes": 7001,
+      "sha256": "d4b374f35bb57378ed4edbce28349438e12849bd0c190a57202a1cf58f556a82"
+    },
+    {
+      "file": "V6_1_FUNCTIONAL_ACCEPTANCE_CONTACT_SHEET.png",
+      "bytes": 404722,
+      "sha256": "f2f245bd38134b56cef6d6e4aa8f6c2f285e6e69f7c9c664057a25d703c0dac7"
+    },
+    {
+      "file": "V6_1_PM_FUNCTIONAL_SIGNOFF_CHECKLIST.md",
+      "bytes": 2965,
+      "sha256": "14c086d1f411eaa1e3129ccdf3fe38ca5cd4fe910bcc5770729bc2ff28e4aaec"
+    },
+    {
+      "file": "V6_ALL_WORKSPACES_CONTACT_SHEET.png",
+      "bytes": 748001,
+      "sha256": "31c7a6467cb42f25c46c8cca889071ad85ad53b35f117a75e36b680091a1992d"
+    },
+    {
+      "file": "index.html",
+      "bytes": 314817,
+      "sha256": "f6c9f2945f697c7aab1036d07d590e817f1de3bddaf0414cbe4f3f882e5422ef"
+    },
+    {
+      "file": "previews/case_drawer_desktop.png",
+      "bytes": 185879,
+      "sha256": "bad843206133bac66bffc63bc4672bb6bbf8db71d50dc1e98626e86920726b9b"
+    },
+    {
+      "file": "previews/design_desktop.png",
+      "bytes": 196093,
+      "sha256": "41056a105809947f4850a0d757d8f75269c029922a5ee668fc60237414cc59a9"
+    },
+    {
+      "file": "previews/design_mobile.png",
+      "bytes": 64681,
+      "sha256": "e97a91e7e440eb6607a207a06f73a53214d5eb2688b42ddf18af7d9abcfd4832"
+    },
+    {
+      "file": "previews/facilities_desktop.png",
+      "bytes": 179975,
+      "sha256": "758de601c3c6c9ac2b73a5066d702cad0e83d2ca58083275b8b526fa8f377b90"
+    },
+    {
+      "file": "previews/facilities_mobile.png",
+      "bytes": 73473,
+      "sha256": "3a035095b8a400e43b1c7690c885f98952dd45615dd70e3a71d78a4e0e0f1cab"
+    },
+    {
+      "file": "previews/finance_desktop.png",
+      "bytes": 193193,
+      "sha256": "034d3848f95c212cdd88f2eda006ce84c8f7c071d0be5a3bc8dd259dbb9409e6"
+    },
+    {
+      "file": "previews/finance_mobile.png",
+      "bytes": 79810,
+      "sha256": "edc4bb86fd34c26d0006be8e995d2a46fe922b2c44712265bba7e9fec48b4bfb"
+    },
+    {
+      "file": "previews/fix_01_facility_13_of_13.png",
+      "bytes": 179213,
+      "sha256": "ed91f587a6165a99fcd466f9895900fd822b304b2250653a2463c43a11b7306b"
+    },
+    {
+      "file": "previews/fix_02_import_12_of_12.png",
+      "bytes": 171995,
+      "sha256": "e1c651e84937167249cf1102f2fee352b475434032d96faa8fa6ebb3916ef2cf"
+    },
+    {
+      "file": "previews/fix_03_shop_61_90_cohort.png",
+      "bytes": 187304,
+      "sha256": "1a2a2caf81d076f09576009c767dfb93b8b19c3117f23bcea9c233f4bb465f8d"
+    },
+    {
+      "file": "previews/fix_04_guest_selected_shop_preserved.png",
+      "bytes": 158828,
+      "sha256": "08eefe42ef297a0f5e42d8dbf17cda1f79a867302d6dbf0f4f8beb4c9f2d3f50"
+    },
+    {
+      "file": "previews/fix_05_vendor_submitted_application.png",
+      "bytes": 170809,
+      "sha256": "17ed713797fa80f1bca984059cf5c5d3c801f143931743965eba3cabdf8449be"
+    },
+    {
+      "file": "previews/fix_06_admin_contract_awaiting_acceptance.png",
+      "bytes": 191527,
+      "sha256": "210e3aae39b3b7e6ed43a804b7d72f93b95564c7f5600aabb1c3730c64b0c18c"
+    },
+    {
+      "file": "previews/fix_07_vendor_contract_acceptance.png",
+      "bytes": 176025,
+      "sha256": "72e9e6712c52e79db4f59d51760b4c9930a19e47f9bec830de03e39517627a68"
+    },
+    {
+      "file": "previews/fix_08_readonly_rental_preflight.png",
+      "bytes": 219463,
+      "sha256": "fab010ab803171b07d2911853fc892bd6657fea1aa97c31efbdba36a29c9fdb0"
+    },
+    {
+      "file": "previews/fix_09_request_assignment_timeline.png",
+      "bytes": 209105,
+      "sha256": "f216bdc8a2247bcaac1ecbc3d2ff487b7d310589d597b85cf7686a132fe76793"
+    },
+    {
+      "file": "previews/fix_10_notifications_inbox.png",
+      "bytes": 198965,
+      "sha256": "d67ffa52336a2c51c062d04a1879dda5bf2c1bb999024f34414f7c3faa06892b"
+    },
+    {
+      "file": "previews/fix_11_supplier_awarded_po.png",
+      "bytes": 178752,
+      "sha256": "e3274024b64ef25f4953d13392c8764c03bb49b8aadf06216f87b30b474bf866"
+    },
+    {
+      "file": "previews/fix_12_stock_verified_95_of_100.png",
+      "bytes": 163263,
+      "sha256": "fb36bf6bfcad5e9efac2e3d2ad95172cd3705b1fe3b8e5c0f4be21e2fe2730d2"
+    },
+    {
+      "file": "previews/fix_13_receipt_accepted_settlement_hold.png",
+      "bytes": 183790,
+      "sha256": "8646a9827a6b6d8c52b150c84ec809c1b4793c63d4091b4d545d66c3e2d03c45"
+    },
+    {
+      "file": "previews/fix_14_rbac_market_denial.png",
+      "bytes": 198931,
+      "sha256": "db1cfcb90a15469dac2efcba052ee5a070ed230973c4a0882688ac2dcbbbe046"
+    },
+    {
+      "file": "previews/gate_desktop.png",
+      "bytes": 176736,
+      "sha256": "9c918df50059d4ce757962140e95d4694d40310a12feb3e0608546addc46872a"
+    },
+    {
+      "file": "previews/gate_mobile.png",
+      "bytes": 72276,
+      "sha256": "c8702dec98274b247618282ef6eb32077e0199ab0fae6802b81ae433b4fd9283"
+    },
+    {
+      "file": "previews/global_desktop.png",
+      "bytes": 249452,
+      "sha256": "66e8ee47ce6fccce38005ab2d48d935e9024d18ef6cd5d76392dedf9175a3a55"
+    },
+    {
+      "file": "previews/global_mobile.png",
+      "bytes": 110292,
+      "sha256": "381b8e2504212f755dbd893fcf80dc248702de4782383bfcec5607a7f0486a3d"
+    },
+    {
+      "file": "previews/imports_desktop.png",
+      "bytes": 172188,
+      "sha256": "431662b24e1840c42b7bcd41bc66203224dde1667a7507a713590b30195424b2"
+    },
+    {
+      "file": "previews/imports_mobile.png",
+      "bytes": 65325,
+      "sha256": "de17994aa2835604947fe522d66ae2f804872785418f99c7e5f1ce541768229e"
+    },
+    {
+      "file": "previews/library_desktop.png",
+      "bytes": 179261,
+      "sha256": "50d734ed32af84deae32a9006478c85d330d2a0867e5cba44251471449f6f682"
+    },
+    {
+      "file": "previews/library_mobile.png",
+      "bytes": 69029,
+      "sha256": "849c9ee6f41747b078f9772933febb148e28010b104448a931cb12b596fb1804"
+    },
+    {
+      "file": "previews/markets_desktop.png",
+      "bytes": 170170,
+      "sha256": "9e7b6c0cfeaa38c6a7feff60ede736cf51c58899dc24092db354de8b4dfcb5c7"
+    },
+    {
+      "file": "previews/markets_mobile.png",
+      "bytes": 67698,
+      "sha256": "be17fc2cc6aabf01a996239c56ab93d26d35cddb484197110ea1ce9d22c27d5a"
+    },
+    {
+      "file": "previews/persona_gate_desktop.png",
+      "bytes": 175577,
+      "sha256": "705bec2c6d0b7c341e798808188bcb7e68505a4d41f254153bfb1ab39d91a540"
+    },
+    {
+      "file": "previews/persona_gate_mobile.png",
+      "bytes": 96087,
+      "sha256": "4bf3cdcb4a1382de370c95127a10fc6cbc968bda1cb52a2fc49375c70202ad7c"
+    },
+    {
+      "file": "previews/persona_master_desktop.png",
+      "bytes": 244923,
+      "sha256": "1d72ac3a4caaf348658924d3a28dd1196d2939b50c58b89d9bd5688d85ddf68b"
+    },
+    {
+      "file": "previews/persona_readonly_desktop.png",
+      "bytes": 247010,
+      "sha256": "26121c76c8956291317f36b84fa5e34f034caf9fce95cb2b384964e6164fa18f"
+    },
+    {
+      "file": "previews/persona_stock_desktop.png",
+      "bytes": 180239,
+      "sha256": "8e2427985c47cf2f41d3d40e3311b52cbb522ff53593ea3c4504923b75ad39e5"
+    },
+    {
+      "file": "previews/persona_stock_mobile.png",
+      "bytes": 98546,
+      "sha256": "6a7b9f2673f742e9e6ebfc22f4cbb78a864a2bc46fcc3e3fe188dfbcbc8784d3"
+    },
+    {
+      "file": "previews/persona_supplier-pending_desktop.png",
+      "bytes": 183382,
+      "sha256": "e9cbd07a8299391611c5ce27d3919c502562cd8f2d6a4b349ddd18cda5c335c2"
+    },
+    {
+      "file": "previews/persona_supplier-pending_mobile.png",
+      "bytes": 102149,
+      "sha256": "321c1830f00411e6a259317b5f039389c7ae833dc2c7a48f55fae27572b7af47"
+    },
+    {
+      "file": "previews/persona_supplier_desktop.png",
+      "bytes": 186166,
+      "sha256": "a5c838e8ac6a4d07d3ecf36a3129f647da41ca5e5d61a8fc8a8355536bec4445"
+    },
+    {
+      "file": "previews/persona_vendor-pending_desktop.png",
+      "bytes": 219796,
+      "sha256": "4141e489af8e0c93d4f827eba316fced6106df72c3e6c3f964da5bad7ec3310d"
+    },
+    {
+      "file": "previews/persona_vendor-pending_mobile.png",
+      "bytes": 111124,
+      "sha256": "db7884c4b73dc67e9a364e64cff61f5d0acfd7de1f80084e57e418767e2ba3c3"
+    },
+    {
+      "file": "previews/persona_vendor_desktop.png",
+      "bytes": 199785,
+      "sha256": "7bd1d8df19a4539f40d62139646b6ff575c0996a6d0d81ae47233620dcaf277e"
+    },
+    {
+      "file": "previews/rental_desktop.png",
+      "bytes": 192435,
+      "sha256": "b4384dc936eaef4843c958d48f929dc0c8a8b84c258d42bcafe0c2c3c131085a"
+    },
+    {
+      "file": "previews/rental_mobile.png",
+      "bytes": 73613,
+      "sha256": "cc52d025f3149b09a284c2803de075c7d4e3b8c29fdfd14e7563a887f4511b0d"
+    },
+    {
+      "file": "previews/requests_desktop.png",
+      "bytes": 166345,
+      "sha256": "d4f6c9544f22d35049867214ee9c425e3b4ba685afbbefb714b8bb51ff68c620"
+    },
+    {
+      "file": "previews/requests_mobile.png",
+      "bytes": 68299,
+      "sha256": "024abd381741bf801f744b4ce46572d596bb1f7765e553107be44612c37ec3c0"
+    },
+    {
+      "file": "previews/review_desktop.png",
+      "bytes": 272623,
+      "sha256": "1dd904522771f0f67f5f5901d2af8d20c7ba82c8929f1483556af8c28eabcc89"
+    },
+    {
+      "file": "previews/review_mobile.png",
+      "bytes": 119167,
+      "sha256": "ae50d82a70bec78559bfca0f7ac68fea55ccb1410e9ffb3878667cbe32509acc"
+    },
+    {
+      "file": "previews/roles_desktop.png",
+      "bytes": 197277,
+      "sha256": "4d0b610caa9e59f193de3c81869415ee26c925997968362baffe7f1399a6808a"
+    },
+    {
+      "file": "previews/roles_mobile.png",
+      "bytes": 69171,
+      "sha256": "4f617b451d4b93ebc7ac22fd92f38a1c6307f0f84421be3e55cec2b0a4cf862a"
+    },
+    {
+      "file": "previews/shop-finder_desktop.png",
+      "bytes": 304507,
+      "sha256": "cc84d27431821fb8ec0f2d7dda46c5b4874fe00572f80c3ada8b345ab3487ce5"
+    },
+    {
+      "file": "previews/shop-finder_mobile.png",
+      "bytes": 115791,
+      "sha256": "d2ec31e6d4c90ad15f526f0df58efaaa98f2e32cdbe215365e7bac5073ce2bdc"
+    },
+    {
+      "file": "previews/staff_desktop.png",
+      "bytes": 183525,
+      "sha256": "7812bc5241a2ac3d3a85bd05a097a37995ff0d2288da2cf005fcf1fc8bb225f5"
+    },
+    {
+      "file": "previews/staff_mobile.png",
+      "bytes": 70909,
+      "sha256": "61cfe929e2eebae3354bd10dff9fcf68887a776d07867288e1a77581bc004d01"
+    },
+    {
+      "file": "previews/suppliers_desktop.png",
+      "bytes": 178738,
+      "sha256": "09de4b6369a5bf855a5023ebf41969d0c2ecc663174609119969a6684e0256d6"
+    },
+    {
+      "file": "previews/suppliers_mobile.png",
+      "bytes": 68536,
+      "sha256": "88a37bf82e971dc69f61b7468777e06f56efa4c6f9f937d93f11a59c55f9b608"
+    },
+    {
+      "file": "previews/v6_1_functional/01_global_dashboard.png",
+      "bytes": 250136,
+      "sha256": "2b9d7947e06edcc73f1c8904daf450a3af6c4a8a7d8597311428b103c18d7b9c"
+    },
+    {
+      "file": "previews/v6_1_functional/02_facility_intelligence.png",
+      "bytes": 181392,
+      "sha256": "c9822a45473a0ba5f7070a7278c11496fda4c15b17bf33aefccb5b8d3b8cca12"
+    },
+    {
+      "file": "previews/v6_1_functional/03_facility_gap_13_exact_rows.png",
+      "bytes": 183220,
+      "sha256": "cf20df9121621a16203d75bfb57879c7ae992166b012b997cdc2b256dea6db6e"
+    },
+    {
+      "file": "previews/v6_1_functional/04_import_pipeline.png",
+      "bytes": 174277,
+      "sha256": "ef93dd28747bdde5048c6d97a7c830fb01bd9cb890735d01c8993e5c6031fdcf"
+    },
+    {
+      "file": "previews/v6_1_functional/05_import_review_blocked_12_exact_rows.png",
+      "bytes": 173238,
+      "sha256": "11c77ad682af2d5de645d87872060e959a32ce34e1799f9e0dd147ae3e43d5cc"
+    },
+    {
+      "file": "previews/v6_1_functional/06_shop_61_90_vendors_3.png",
+      "bytes": 195314,
+      "sha256": "b408e025740bfe548205f8c08b188268e662733ba1ff285707ed7e89aafd1f02"
+    },
+    {
+      "file": "previews/v6_1_functional/07_finance_overdue.png",
+      "bytes": 193482,
+      "sha256": "b7391edd01f5aa6ba61f3fb8350990e43b57b16ab90defad315fe722b146d576"
+    },
+    {
+      "file": "previews/v6_1_functional/08_request_center_due_dates.png",
+      "bytes": 172529,
+      "sha256": "84e1b241a864e495e9ecccb3aa1e8100c75ab8f3ce312aa7bbe1690318ed283f"
+    },
+    {
+      "file": "previews/v6_1_functional/09_request_detail_actions.png",
+      "bytes": 210212,
+      "sha256": "510ca37a503f7fdc4d173f53e7c73396e64bed54d825ef68d2ce08bd820ac96c"
+    },
+    {
+      "file": "previews/v6_1_functional/10_guest_shop_finder.png",
+      "bytes": 274052,
+      "sha256": "3e2a35ebaf2784ce419ebc38930e7ced0515704933830969e334d9970cf3c22f"
+    },
+    {
+      "file": "previews/v6_1_functional/11_shop_apply_step.png",
+      "bytes": 209745,
+      "sha256": "0b130b210eab2693ac3a3bad6035ee2d193a6e3e739c5a6a27af41f4618bc34a"
+    },
+    {
+      "file": "previews/v6_1_functional/12_guest_preserved_listing.png",
+      "bytes": 159797,
+      "sha256": "bbcb2b3858e6e4d5ed4bb127c27e23f75b4872d70b9bc64fe93fc88273c89e3b"
+    },
+    {
+      "file": "previews/v6_1_functional/13_pending_vendor_application_form.png",
+      "bytes": 170171,
+      "sha256": "897c216fa6d8ee1398c301627775a62a6ce3983760d425e432532fef52c9b26c"
+    },
+    {
+      "file": "previews/v6_1_functional/14_submitted_application_tracking.png",
+      "bytes": 171880,
+      "sha256": "8fd6dd9d266c791517556cd4a3f38b6eea65001e2df9874b7123bbdc9162fca6"
+    },
+    {
+      "file": "previews/v6_1_functional/15_admin_vendor_kyc_review.png",
+      "bytes": 198476,
+      "sha256": "274306e6fc1c241d88d7b623a0bbd121795a69dcc6be1b9a101bf303eaf5b690"
+    },
+    {
+      "file": "previews/v6_1_functional/16_admin_tin_stock_clearance.png",
+      "bytes": 200104,
+      "sha256": "74a4db0e98cfcf67fdbd7783dce6298b71977d485a744a350f66b05c97344d27"
+    },
+    {
+      "file": "previews/v6_1_functional/17_contract_terms_offered.png",
+      "bytes": 197628,
+      "sha256": "cffdb3ac298bb300e066d947ddf09fb5fe8090bbe911afed4f8bcdbf69b934b4"
+    },
+    {
+      "file": "previews/v6_1_functional/18_vendor_terms_acceptance.png",
+      "bytes": 177512,
+      "sha256": "095b85c0d52849e6c54b05668bb17e408a2ef47fa8d54a0447d1aae2054c44ec"
+    },
+    {
+      "file": "previews/v6_1_functional/19_accepted_tenancy_preview.png",
+      "bytes": 179472,
+      "sha256": "0cc5fb3eee6fcd0573f10817233c1afa374f6c9fddd15675443ba97dfe17c205"
+    },
+    {
+      "file": "previews/v6_1_functional/20_rental_preflight_reasons_policy_conflict.png",
+      "bytes": 239819,
+      "sha256": "4651e5f132c7675e8f1542ea07f59ae46d0fd2e2c5fca9effaaf27593d32bff7"
+    },
+    {
+      "file": "previews/v6_1_functional/21_supply_procurement_initial.png",
+      "bytes": 185240,
+      "sha256": "7ca70f438d04ecd9f9d5fb33997de03e0862a6fc1b77b27a92fde1fb019e68a8"
+    },
+    {
+      "file": "previews/v6_1_functional/22_approved_po_awaiting_supplier.png",
+      "bytes": 182179,
+      "sha256": "8485ed882ec0e81d8416963da80c45c97a37f1e0318b008f99d28a652daf32e7"
+    },
+    {
+      "file": "previews/v6_1_functional/23_supplier_dispatched.png",
+      "bytes": 157756,
+      "sha256": "029491b4a9f6366035b128a16019771ce0259f53e47dcd9975d192428b6d7869"
+    },
+    {
+      "file": "previews/v6_1_functional/24_gate_staff_action.png",
+      "bytes": 161459,
+      "sha256": "5f23ee59275244cab5bfd7c1bf9bd39908fc365ebda46b6f13e0880c69ac1a69"
+    },
+    {
+      "file": "previews/v6_1_functional/25_stock_counter_verification.png",
+      "bytes": 161231,
+      "sha256": "e855028904d5de58177f76c4ba6d4bb28e6a4fe78be172031d59c6c5d8cde419"
+    },
+    {
+      "file": "previews/v6_1_functional/26_goods_receipt_settlement_hold.png",
+      "bytes": 187179,
+      "sha256": "a83c11ac1a8f792a09c99048baede4d29070347968df8da3c3ea4c3db4228302"
+    },
+    {
+      "file": "previews/v6_1_functional/27_rbac_foreign_market_read_only_deny.png",
+      "bytes": 200777,
+      "sha256": "428b122761bec4e584040a7bf06b06794dc7908aed18cad12e9193e18d48dd6e"
+    },
+    {
+      "file": "previews/v6_1_functional/28_global_mobile.png",
+      "bytes": 110168,
+      "sha256": "7bfc98f5579690403604a3858258fd99df8266fe64e68af1b554a98cf6784707"
+    },
+    {
+      "file": "previews/v6_1_functional/29_rental_journey_mobile.png",
+      "bytes": 84859,
+      "sha256": "2629d85d35ea89182dd926f5eeeb7d962b9a6933b87cc484e8f8f15d95dde0fe"
+    },
+    {
+      "file": "previews/v6_1_functional/30_requests_mobile.png",
+      "bytes": 68039,
+      "sha256": "ce45756c6af23614ceafd6a57a238b68b0ff2cfb5cf77bd4637aee36f3e45563"
+    },
+    {
+      "file": "previews/vendors_desktop.png",
+      "bytes": 185370,
+      "sha256": "00ef1ff3ef229dcf92adc98a9427f3ca68a414f47d5d85c3f02ad953e1872d73"
+    },
+    {
+      "file": "previews/vendors_mobile.png",
+      "bytes": 71088,
+      "sha256": "589129918dac4c78f4887d84659e4c3ba75f491b38c01633ab059837933a50de"
+    },
+    {
+      "file": "qa/BROWSER_QA_MATRIX.json",
+      "bytes": 476,
+      "sha256": "fff7403f7856b6615555611a550d62e96ad270dd74a2ca2205630e21e0626a37"
+    },
+    {
+      "file": "qa/README.md",
+      "bytes": 964,
+      "sha256": "c2d75e633b29ecb1f10785f899a79398b9aa966b6dfcd508adc58ab9d0eeb4c0"
+    },
+    {
+      "file": "qa/SMOKE_REPORT.json",
+      "bytes": 332,
+      "sha256": "cf27de729eb146d66cd1edb4f7a08d07f2ab20a9dfd23c706a47d5634454ac10"
+    },
+    {
+      "file": "qa/browser_financial_parity_playwright.py",
+      "bytes": 6519,
+      "sha256": "851778c82dd17c3313b4ca3849e7d83b0547f786461f70ee95fd2959e178bb63"
+    },
+    {
+      "file": "qa/browser_functional_playwright.py",
+      "bytes": 9990,
+      "sha256": "ad6e831a3a4366ac304c3d980763a0aef4187b7ea2eb96a607b7f66e8cae4787"
+    },
+    {
+      "file": "qa/browser_matrix_playwright.py",
+      "bytes": 6880,
+      "sha256": "e32684a0d591d002f12bc20698e4c39dd49ed0f66536db5b1b3113d260614ae6"
+    },
+    {
+      "file": "qa/browser_smoke_playwright.py",
+      "bytes": 2823,
+      "sha256": "0be384ddfcf9b224a3483c989abdd49135a6d51fc277246c0313f0a1424668bf"
+    },
+    {
+      "file": "qa/export-smoke.csv",
+      "bytes": 1183,
+      "sha256": "d09bfe49df641811737f7bac83d1abe32e8379bd570a2ce9ea81f0a3547a88c8"
+    },
+    {
+      "file": "qa/matrix_case.csv",
+      "bytes": 1183,
+      "sha256": "d09bfe49df641811737f7bac83d1abe32e8379bd570a2ce9ea81f0a3547a88c8"
+    },
+    {
+      "file": "qa/matrix_pm.json",
+      "bytes": 3231,
+      "sha256": "8994fc960fe1eb9f971b188a501c85b5b162e4f30160dd46a39c4c2306eb2f00"
+    },
+    {
+      "file": "qa/test_invoice_export.csv",
+      "bytes": 4384,
+      "sha256": "d3e8d5a8eabcceeeefc4cd05671a9941c984857c695071d4ee0845526ad8898c"
+    },
+    {
+      "file": "qa/test_v6_1_extra.py",
+      "bytes": 6519,
+      "sha256": "851778c82dd17c3313b4ca3849e7d83b0547f786461f70ee95fd2959e178bb63"
+    },
+    {
+      "file": "qa/test_v6_1_functional.py",
+      "bytes": 10018,
+      "sha256": "e36e6e763a62f2134e7b38abcc02de4087eabe3932d521e3c991b25eab666947"
+    },
+    {
+      "file": "qa/test_vendor_export.csv",
+      "bytes": 421,
+      "sha256": "47cd17d909de8b12dcdfb6f665598dc463565285041e2f4abc52b5c0845cb635"
+    },
+    {
+      "file": "source/app.js",
+      "bytes": 128217,
+      "sha256": "e334e5dfa2c6a14039fcb609267ca5a4ec48a46c6d5e3375f2331a8e9baa7a9d"
+    },
+    {
+      "file": "source/styles.css",
+      "bytes": 24466,
+      "sha256": "075c022be2b9292d9be79c86c8a5b76af4be7f6cfa20cc67047a287a55c4937b"
+    },
+    {
+      "file": "source/synthetic_data.json",
+      "bytes": 218513,
+      "sha256": "90b999ce72c698cc20ed250372cdb1920597e54da7e12d1cbdbbf842b0e957ad"
+    }
+  ]
+}

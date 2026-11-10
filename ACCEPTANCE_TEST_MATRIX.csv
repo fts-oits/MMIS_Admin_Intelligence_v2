@@ -1,0 +1,63 @@
+suite,check,passed,detail
+QA_RESULTS_FUNCTIONAL,Facility 13 gap parity,True,"(13, 13, {'contractGap': 'GAP'})"
+QA_RESULTS_FUNCTIONAL,Import 12 attention parity,True,"(12, 12, {'reviewGroup': 'ACTION_REQUIRED'})"
+QA_RESULTS_FUNCTIONAL,Request category filtered,True,
+QA_RESULTS_FUNCTIONAL,Shop + 61-90 exact Vendor cohort,True,"(3, 3, {'q': '', 'ageBand': 'DAYS_61_90', 'unitType': 'SHOP'})"
+QA_RESULTS_FUNCTIONAL,History Back restores prior workspace,True,vendors
+QA_RESULTS_FUNCTIONAL,History Forward restores filtered workspace,True,
+QA_RESULTS_FUNCTIONAL,Public listing opens details,True,
+QA_RESULTS_FUNCTIONAL,Guest selection preserved before sign-in,True,
+QA_RESULTS_FUNCTIONAL,Login return preserves selected unit,True,
+QA_RESULTS_FUNCTIONAL,Application submitted and trackable,True,
+QA_RESULTS_FUNCTIONAL,Admin review distinct before account,True,
+QA_RESULTS_FUNCTIONAL,KYC prerequisite blocks unreviewed onboarding,True,
+QA_RESULTS_FUNCTIONAL,Onboarding approval does not activate tenancy,True,
+QA_RESULTS_FUNCTIONAL,Rental approval blocked until prerequisites,True,
+QA_RESULTS_FUNCTIONAL,Rental decision separately recorded,True,
+QA_RESULTS_FUNCTIONAL,"Contract approved, awaiting Vendor acceptance",True,
+QA_RESULTS_FUNCTIONAL,Contract acceptance only Vendor,True,
+QA_RESULTS_FUNCTIONAL,"Readiness has first-liability date, version, collision, non-posting",True,"SOURCE EVIDENCE · SYNTHETIC
+Selected rental invoice preflight
+READ-ONLY · NEVER POST
+Selected Facility IDs
+FAC-0001
+Selected records
+1
+Billing period
+2026-11
+First liable day
+2026-11-01
+Issue date
+2026-11-10 · separate from policy selection"
+QA_RESULTS_FUNCTIONAL,Request assignment generates audit and notification,True,
+QA_RESULTS_FUNCTIONAL,Request info status transition,True,
+QA_RESULTS_FUNCTIONAL,Inbox shows case-linked notifications,True,
+QA_RESULTS_FUNCTIONAL,"Admin can qualify, award and create PO",True,
+QA_RESULTS_FUNCTIONAL,Supplier acknowledges and dispatches only own PO,True,
+QA_RESULTS_FUNCTIONAL,Gate admission permitted for Gate role,True,
+QA_RESULTS_FUNCTIONAL,Stock verification preserves short quantity,True,
+QA_RESULTS_FUNCTIONAL,Receipt accepted but financial settlement HOLD,True,
+QA_RESULTS_FUNCTIONAL,Read-only approval denied,True,
+QA_RESULTS_FUNCTIONAL,Foreign market denial explanation,True,
+QA_RESULTS_FUNCTIONAL,No whole-page overflow 320px,True,
+QA_RESULTS_FUNCTIONAL,No whole-page overflow 390px,True,
+QA_RESULTS_FUNCTIONAL,No whole-page overflow 768px,True,
+QA_RESULTS_FUNCTIONAL,No whole-page overflow 1024px,True,
+QA_RESULTS_FUNCTIONAL,No whole-page overflow 1440px,True,
+QA_RESULTS_FUNCTIONAL,No JavaScript errors,True,[]
+QA_RESULTS_EXTRA,Overdue liability amount and invoice worklist parity,True,"(4392000, 4392000, 44)"
+QA_RESULTS_EXTRA,Overdue invoice export row parity,True,"(44, 44)"
+QA_RESULTS_EXTRA,61-90 per-invoice Vendor count not oldest-age count,True,"(11, 11)"
+QA_RESULTS_EXTRA,Shop + 61-90 amount matches invoice cohort,True,"(447000, 447000)"
+QA_RESULTS_EXTRA,Shop 61-90 CSV distinct Vendor parity,True,"(3, 3)"
+QA_RESULTS_EXTRA,Market switch clears dependent filters,True,
+QA_RESULTS_EXTRA,Back restores Market and combined filters,True,
+QA_RESULTS_EXTRA,Forward restores Facility page and scoped Market,True,
+QA_RESULTS_EXTRA,Refreshed deep link restores validated filters,True,
+QA_RESULTS_EXTRA,Pending Vendor forbidden route stays blocked,True,
+QA_RESULTS_EXTRA,Authenticated public header shows no Sign In,True,
+QA_RESULTS_EXTRA,Logged in public Shop header retains user & notifications,True,
+QA_RESULTS_EXTRA,Read-only request case drawer has no mutation controls,True,
+QA_RESULTS_EXTRA,RBAC matrix includes Gate and Stock roles,True,
+QA_RESULTS_EXTRA,Every sample request has dueAt timeline,True,
+QA_RESULTS_EXTRA,No JS exceptions,True,[]

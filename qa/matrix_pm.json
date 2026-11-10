@@ -1,0 +1,103 @@
+{
+  "prototype": "MMIS V6 · PM Design Approval",
+  "generatedAt": "2026-11-10T13:13:20.276Z",
+  "releaseBoundary": "Visual-only signoff; not production/Finance approval",
+  "approvals": [
+    {
+      "id": "shell",
+      "decision": "Persistent authenticated header, account and notifications across private/public journeys",
+      "approved": true
+    },
+    {
+      "id": "nav",
+      "decision": "Approve navigation group labels, Market scope indicator and first-row priority",
+      "approved": false
+    },
+    {
+      "id": "palette",
+      "decision": "Retain cream/dark-green theme with accessible Base Vega/React 18 compatibility",
+      "approved": false
+    },
+    {
+      "id": "density",
+      "decision": "Approve compact table density and mobile navigation behavior",
+      "approved": false
+    },
+    {
+      "id": "metrics",
+      "decision": "Approve four Global executive KPI labels and shared MetricDefinition model",
+      "approved": false
+    },
+    {
+      "id": "cases",
+      "decision": "Requests count unique cases; exceptions reported separately",
+      "approved": false
+    },
+    {
+      "id": "vendors",
+      "decision": "Approve Vendor identity vs tenancy and RentContract entitlement distinctions",
+      "approved": false
+    },
+    {
+      "id": "facility",
+      "decision": "Approve physical-unit matrix, companion Stall exclusion and contract-gap filters",
+      "approved": false
+    },
+    {
+      "id": "finance",
+      "decision": "Accept Finance HOLD visibility; no claim of approved carry-forward/collection policy",
+      "approved": false
+    },
+    {
+      "id": "supplier",
+      "decision": "Approve Supplier Market grant, PO/dispatch/Gate/Stock/settlement stages",
+      "approved": false
+    },
+    {
+      "id": "roles",
+      "decision": "Approve SuperAdmin, MarketMaster, read-only, Vendor/Supplier and Gate/Stock persona views",
+      "approved": false
+    },
+    {
+      "id": "pending",
+      "decision": "Approve pending Vendor/Supplier restricted journeys and Shop discovery",
+      "approved": false
+    },
+    {
+      "id": "staff",
+      "decision": "Approve effective-permission explanation with server-side authority",
+      "approved": false
+    },
+    {
+      "id": "imports",
+      "decision": "Approve import staging/review/provenance and restricted promotion vocabulary",
+      "approved": false
+    },
+    {
+      "id": "drill",
+      "decision": "Approve KPI → filtered table → evidence drawer → original domain action pattern",
+      "approved": false
+    },
+    {
+      "id": "export",
+      "decision": "Approve filtered CSV parity, offset pagination, and saved-view roadmap",
+      "approved": false
+    },
+    {
+      "id": "design",
+      "decision": "Approve curated shadcn/BundUI/Studio Blocks/PaceUI design strategy",
+      "approved": false
+    },
+    {
+      "id": "accept",
+      "decision": "Keep actual backend integration, financial approval, PostgreSQL and authenticated UAT outside PM visual signoff",
+      "approved": false
+    },
+    {
+      "id": "branch",
+      "decision": "Authorize only feature-branch implementation; no protected branch, new workflow or live DB write",
+      "approved": false
+    }
+  ],
+  "comments": ""
+}

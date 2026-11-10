@@ -1,0 +1,172 @@
+[
+  {
+    "name": "Facility 13 gap parity",
+    "pass": true,
+    "details": "(13, 13, {'contractGap': 'GAP'})"
+  },
+  {
+    "name": "Import 12 attention parity",
+    "pass": true,
+    "details": "(12, 12, {'reviewGroup': 'ACTION_REQUIRED'})"
+  },
+  {
+    "name": "Request category filtered",
+    "pass": true,
+    "details": ""
+  },
+  {
+    "name": "Shop + 61-90 exact Vendor cohort",
+    "pass": true,
+    "details": "(3, 3, {'q': '', 'ageBand': 'DAYS_61_90', 'unitType': 'SHOP'})"
+  },
+  {
+    "name": "History Back restores prior workspace",
+    "pass": true,
+    "details": "vendors"
+  },
+  {
+    "name": "History Forward restores filtered workspace",
+    "pass": true,
+    "details": ""
+  },
+  {
+    "name": "Public listing opens details",
+    "pass": true,
+    "details": ""
+  },
+  {
+    "name": "Guest selection preserved before sign-in",
+    "pass": true,
+    "details": ""
+  },
+  {
+    "name": "Login return preserves selected unit",
+    "pass": true,
+    "details": ""
+  },
+  {
+    "name": "Application submitted and trackable",
+    "pass": true,
+    "details": ""
+  },
+  {
+    "name": "Admin review distinct before account",
+    "pass": true,
+    "details": ""
+  },
+  {
+    "name": "KYC prerequisite blocks unreviewed onboarding",
+    "pass": true,
+    "details": ""
+  },
+  {
+    "name": "Onboarding approval does not activate tenancy",
+    "pass": true,
+    "details": ""
+  },
+  {
+    "name": "Rental approval blocked until prerequisites",
+    "pass": true,
+    "details": ""
+  },
+  {
+    "name": "Rental decision separately recorded",
+    "pass": true,
+    "details": ""
+  },
+  {
+    "name": "Contract approved, awaiting Vendor acceptance",
+    "pass": true,
+    "details": ""
+  },
+  {
+    "name": "Contract acceptance only Vendor",
+    "pass": true,
+    "details": ""
+  },
+  {
+    "name": "Readiness has first-liability date, version, collision, non-posting",
+    "pass": true,
+    "details": "SOURCE EVIDENCE \u00b7 SYNTHETIC\nSelected rental invoice preflight\nREAD-ONLY \u00b7 NEVER POST\nSelected Facility IDs\nFAC-0001\nSelected records\n1\nBilling period\n2026-11\nFirst liable day\n2026-11-01\nIssue date\n2026-11-10 \u00b7 separate from policy selection"
+  },
+  {
+    "name": "Request assignment generates audit and notification",
+    "pass": true,
+    "details": ""
+  },
+  {
+    "name": "Request info status transition",
+    "pass": true,
+    "details": ""
+  },
+  {
+    "name": "Inbox shows case-linked notifications",
+    "pass": true,
+    "details": ""
+  },
+  {
+    "name": "Admin can qualify, award and create PO",
+    "pass": true,
+    "details": ""
+  },
+  {
+    "name": "Supplier acknowledges and dispatches only own PO",
+    "pass": true,
+    "details": ""
+  },
+  {
+    "name": "Gate admission permitted for Gate role",
+    "pass": true,
+    "details": ""
+  },
+  {
+    "name": "Stock verification preserves short quantity",
+    "pass": true,
+    "details": ""
+  },
+  {
+    "name": "Receipt accepted but financial settlement HOLD",
+    "pass": true,
+    "details": ""
+  },
+  {
+    "name": "Read-only approval denied",
+    "pass": true,
+    "details": ""
+  },
+  {
+    "name": "Foreign market denial explanation",
+    "pass": true,
+    "details": ""
+  },
+  {
+    "name": "No whole-page overflow 320px",
+    "pass": true,
+    "details": ""
+  },
+  {
+    "name": "No whole-page overflow 390px",
+    "pass": true,
+    "details": ""
+  },
+  {
+    "name": "No whole-page overflow 768px",
+    "pass": true,
+    "details": ""
+  },
+  {
+    "name": "No whole-page overflow 1024px",
+    "pass": true,
+    "details": ""
+  },
+  {
+    "name": "No whole-page overflow 1440px",
+    "pass": true,
+    "details": ""
+  },
+  {
+    "name": "No JavaScript errors",
+    "pass": true,
+    "details": "[]"
+  }
+]

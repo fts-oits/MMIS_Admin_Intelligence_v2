@@ -1,0 +1,4 @@
+﻿"Vendor","Unit Type","Account","RentContract","Issued rent","Allocated","Eligible overdue","Aging"
+"Betty OumaVND-0012","SHOP","PENDING","ACTIVE","UGX 1,200,000","UGX 609,000","UGX 347,000","DAYS 61 90"
+"George GumaVND-0033","STALL","PENDING","ACTIVE","UGX 410,000","UGX 267,000","UGX 59,000","DAYS 61 90"
+"Edward OjokVND-0047","LOCK UP","APPROVED","ACTIVE","UGX 2,060,000","UGX 1,011,000","UGX 41,000","DAYS 61 90"

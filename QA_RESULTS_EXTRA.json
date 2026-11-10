@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Overdue liability amount and invoice worklist parity",
+    "pass": true,
+    "detail": "(4392000, 4392000, 44)"
+  },
+  {
+    "name": "Overdue invoice export row parity",
+    "pass": true,
+    "detail": "(44, 44)"
+  },
+  {
+    "name": "61-90 per-invoice Vendor count not oldest-age count",
+    "pass": true,
+    "detail": "(11, 11)"
+  },
+  {
+    "name": "Shop + 61-90 amount matches invoice cohort",
+    "pass": true,
+    "detail": "(447000, 447000)"
+  },
+  {
+    "name": "Shop 61-90 CSV distinct Vendor parity",
+    "pass": true,
+    "detail": "(3, 3)"
+  },
+  {
+    "name": "Market switch clears dependent filters",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "Back restores Market and combined filters",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "Forward restores Facility page and scoped Market",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "Refreshed deep link restores validated filters",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "Pending Vendor forbidden route stays blocked",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "Authenticated public header shows no Sign In",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "Logged in public Shop header retains user & notifications",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "Read-only request case drawer has no mutation controls",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "RBAC matrix includes Gate and Stock roles",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "Every sample request has dueAt timeline",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "No JS exceptions",
+    "pass": true,
+    "detail": "[]"
+  }
+]

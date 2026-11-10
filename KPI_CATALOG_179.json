@@ -1,0 +1,1792 @@
+[
+  {
+    "id": "V01",
+    "domain": "VENDOR",
+    "title": "Registered Vendor accounts",
+    "priority": "P0",
+    "definition": "Registered Vendor accounts for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "V02",
+    "domain": "VENDOR",
+    "title": "Approved Vendor identities",
+    "priority": "P0",
+    "definition": "Approved Vendor identities for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "V03",
+    "domain": "VENDOR",
+    "title": "Pending onboarding approvals",
+    "priority": "P0",
+    "definition": "Pending onboarding approvals for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "V04",
+    "domain": "VENDOR",
+    "title": "Unverified Vendor email",
+    "priority": "P0",
+    "definition": "Unverified Vendor email for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "V05",
+    "domain": "VENDOR",
+    "title": "KYC verification pending",
+    "priority": "P0",
+    "definition": "KYC verification pending for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "V06",
+    "domain": "VENDOR",
+    "title": "TIN verification backlog",
+    "priority": "P0",
+    "definition": "TIN verification backlog for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "V07",
+    "domain": "VENDOR",
+    "title": "NIN or identity discrepancies",
+    "priority": "P0",
+    "definition": "NIN or identity discrepancies for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "V08",
+    "domain": "VENDOR",
+    "title": "Vendor account claim risks",
+    "priority": "P0",
+    "definition": "Vendor account claim risks for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "V09",
+    "domain": "VENDOR",
+    "title": "Vendors with assigned Facilities",
+    "priority": "P0",
+    "definition": "Vendors with assigned Facilities for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "V10",
+    "domain": "VENDOR",
+    "title": "Vendors with approved active Contracts",
+    "priority": "P0",
+    "definition": "Vendors with approved active Contracts for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "V11",
+    "domain": "VENDOR",
+    "title": "Vendors without a Facility",
+    "priority": "P0",
+    "definition": "Vendors without a Facility for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "V12",
+    "domain": "VENDOR",
+    "title": "Assigned Vendors without Contracts",
+    "priority": "P0",
+    "definition": "Assigned Vendors without Contracts for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "V13",
+    "domain": "VENDOR",
+    "title": "Multiple-Contract conflicts",
+    "priority": "P1",
+    "definition": "Multiple-Contract conflicts for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "V14",
+    "domain": "VENDOR",
+    "title": "Contracts awaiting acceptance",
+    "priority": "P1",
+    "definition": "Contracts awaiting acceptance for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "V15",
+    "domain": "VENDOR",
+    "title": "Expiring RentContracts",
+    "priority": "P1",
+    "definition": "Expiring RentContracts for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "V16",
+    "domain": "VENDOR",
+    "title": "Expired contracts with occupancy",
+    "priority": "P1",
+    "definition": "Expired contracts with occupancy for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "V17",
+    "domain": "VENDOR",
+    "title": "Tenant eligibility anomalies",
+    "priority": "P1",
+    "definition": "Tenant eligibility anomalies for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "V18",
+    "domain": "VENDOR",
+    "title": "Rent invoices issued",
+    "priority": "P1",
+    "definition": "Rent invoices issued for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "V19",
+    "domain": "VENDOR",
+    "title": "Vendor billed rent",
+    "priority": "P1",
+    "definition": "Vendor billed rent for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "V20",
+    "domain": "VENDOR",
+    "title": "Verified rent allocations",
+    "priority": "P1",
+    "definition": "Verified rent allocations for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "V21",
+    "domain": "VENDOR",
+    "title": "Outstanding rent by Vendor",
+    "priority": "P1",
+    "definition": "Outstanding rent by Vendor for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "V22",
+    "domain": "VENDOR",
+    "title": "Overdue Vendor count",
+    "priority": "P1",
+    "definition": "Overdue Vendor count for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "V23",
+    "domain": "VENDOR",
+    "title": "Verified overdue amount",
+    "priority": "P1",
+    "definition": "Verified overdue amount for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "V24",
+    "domain": "VENDOR",
+    "title": "Held payments needing review",
+    "priority": "P1",
+    "definition": "Held payments needing review for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "V25",
+    "domain": "VENDOR",
+    "title": "Advance rent coverage",
+    "priority": "P1",
+    "definition": "Advance rent coverage for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "V26",
+    "domain": "VENDOR",
+    "title": "Available eligible Vendor credit",
+    "priority": "P1",
+    "definition": "Available eligible Vendor credit for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "V27",
+    "domain": "VENDOR",
+    "title": "Unapplied confirmed payments",
+    "priority": "P1",
+    "definition": "Unapplied confirmed payments for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "V28",
+    "domain": "VENDOR",
+    "title": "Credit-source integrity exceptions",
+    "priority": "P1",
+    "definition": "Credit-source integrity exceptions for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "V29",
+    "domain": "VENDOR",
+    "title": "Invoice-period duplicate conflicts",
+    "priority": "P1",
+    "definition": "Invoice-period duplicate conflicts for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "V30",
+    "domain": "VENDOR",
+    "title": "Overdue 1\u201330 days",
+    "priority": "P1",
+    "definition": "Overdue 1\u201330 days for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "V31",
+    "domain": "VENDOR",
+    "title": "Overdue 31\u201360 days",
+    "priority": "P2",
+    "definition": "Overdue 31\u201360 days for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "V32",
+    "domain": "VENDOR",
+    "title": "Overdue 61\u201390 days",
+    "priority": "P2",
+    "definition": "Overdue 61\u201390 days for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "V33",
+    "domain": "VENDOR",
+    "title": "Overdue 90+ days",
+    "priority": "P2",
+    "definition": "Overdue 90+ days for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "V34",
+    "domain": "VENDOR",
+    "title": "Cumulative 30+/60+/90+ aging",
+    "priority": "P2",
+    "definition": "Cumulative 30+/60+/90+ aging for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "V35",
+    "domain": "VENDOR",
+    "title": "Recovery actions pending",
+    "priority": "P2",
+    "definition": "Recovery actions pending for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "V36",
+    "domain": "VENDOR",
+    "title": "Promised-payment outcomes",
+    "priority": "P2",
+    "definition": "Promised-payment outcomes for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "V37",
+    "domain": "VENDOR",
+    "title": "Vendor dispute and reconciliation count",
+    "priority": "P2",
+    "definition": "Vendor dispute and reconciliation count for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "V38",
+    "domain": "VENDOR",
+    "title": "Vendor inventory readiness",
+    "priority": "P2",
+    "definition": "Vendor inventory readiness for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "V39",
+    "domain": "VENDOR",
+    "title": "Low-stock Vendor count",
+    "priority": "P2",
+    "definition": "Low-stock Vendor count for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "V40",
+    "domain": "VENDOR",
+    "title": "Vendor requisitions outstanding",
+    "priority": "P2",
+    "definition": "Vendor requisitions outstanding for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "V41",
+    "domain": "VENDOR",
+    "title": "Vendor sourcing activity",
+    "priority": "P2",
+    "definition": "Vendor sourcing activity for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "V42",
+    "domain": "VENDOR",
+    "title": "Vendor complaints and support cases",
+    "priority": "P2",
+    "definition": "Vendor complaints and support cases for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "V43",
+    "domain": "VENDOR",
+    "title": "Vendor sales participation",
+    "priority": "P2",
+    "definition": "Vendor sales participation for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "V44",
+    "domain": "VENDOR",
+    "title": "Vendor account access exceptions",
+    "priority": "P2",
+    "definition": "Vendor account access exceptions for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "V45",
+    "domain": "VENDOR",
+    "title": "Vendor activity trend",
+    "priority": "P2",
+    "definition": "Vendor activity trend for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Vendor List",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "F01",
+    "domain": "FACILITY",
+    "title": "Canonical physical unit count",
+    "priority": "P0",
+    "definition": "Canonical physical unit count for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Facility Intelligence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "F02",
+    "domain": "FACILITY",
+    "title": "Physical units by Unit Type",
+    "priority": "P0",
+    "definition": "Physical units by Unit Type for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Facility Intelligence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "F03",
+    "domain": "FACILITY",
+    "title": "Units by Market Level",
+    "priority": "P0",
+    "definition": "Units by Market Level for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Facility Intelligence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "F04",
+    "domain": "FACILITY",
+    "title": "Units by Section and Wing",
+    "priority": "P0",
+    "definition": "Units by Section and Wing for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Facility Intelligence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "F05",
+    "domain": "FACILITY",
+    "title": "Shop-backed companion Stall exclusions",
+    "priority": "P0",
+    "definition": "Shop-backed companion Stall exclusions for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Facility Intelligence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "F06",
+    "domain": "FACILITY",
+    "title": "Legacy standalone Stall records",
+    "priority": "P0",
+    "definition": "Legacy standalone Stall records for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Facility Intelligence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "F07",
+    "domain": "FACILITY",
+    "title": "Recorded occupied units",
+    "priority": "P0",
+    "definition": "Recorded occupied units for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Facility Intelligence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "F08",
+    "domain": "FACILITY",
+    "title": "Recorded vacant units",
+    "priority": "P0",
+    "definition": "Recorded vacant units for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Facility Intelligence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "F09",
+    "domain": "FACILITY",
+    "title": "Reserved units",
+    "priority": "P0",
+    "definition": "Reserved units for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Facility Intelligence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "F10",
+    "domain": "FACILITY",
+    "title": "Occupancy rate by type",
+    "priority": "P0",
+    "definition": "Occupancy rate by type for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Facility Intelligence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "F11",
+    "domain": "FACILITY",
+    "title": "Facilities available for listing",
+    "priority": "P0",
+    "definition": "Facilities available for listing for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Facility Intelligence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "F12",
+    "domain": "FACILITY",
+    "title": "Facilities awaiting inspection",
+    "priority": "P0",
+    "definition": "Facilities awaiting inspection for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Facility Intelligence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "F13",
+    "domain": "FACILITY",
+    "title": "Overallocated unit conflicts",
+    "priority": "P1",
+    "definition": "Overallocated unit conflicts for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Facility Intelligence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "F14",
+    "domain": "FACILITY",
+    "title": "Unit occupation changes",
+    "priority": "P1",
+    "definition": "Unit occupation changes for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Facility Intelligence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "F15",
+    "domain": "FACILITY",
+    "title": "Units assigned without Contracts",
+    "priority": "P1",
+    "definition": "Units assigned without Contracts for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Facility Intelligence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "F16",
+    "domain": "FACILITY",
+    "title": "Active approved Contract coverage",
+    "priority": "P1",
+    "definition": "Active approved Contract coverage for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Facility Intelligence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "F17",
+    "domain": "FACILITY",
+    "title": "Occupied units missing active Contract",
+    "priority": "P1",
+    "definition": "Occupied units missing active Contract for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Facility Intelligence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "F18",
+    "domain": "FACILITY",
+    "title": "Contracted units without assignment",
+    "priority": "P1",
+    "definition": "Contracted units without assignment for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Facility Intelligence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "F19",
+    "domain": "FACILITY",
+    "title": "Multiple active tenancy conflicts",
+    "priority": "P1",
+    "definition": "Multiple active tenancy conflicts for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Facility Intelligence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "F20",
+    "domain": "FACILITY",
+    "title": "Allocation or identity review gaps",
+    "priority": "P1",
+    "definition": "Allocation or identity review gaps for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Facility Intelligence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "F21",
+    "domain": "FACILITY",
+    "title": "Tenant move-in/move-out history",
+    "priority": "P1",
+    "definition": "Tenant move-in/move-out history for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Facility Intelligence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "F22",
+    "domain": "FACILITY",
+    "title": "Contracted expected rent",
+    "priority": "P1",
+    "definition": "Contracted expected rent for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Facility Intelligence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "F23",
+    "domain": "FACILITY",
+    "title": "Issued rent by Unit Type",
+    "priority": "P1",
+    "definition": "Issued rent by Unit Type for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Facility Intelligence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "F24",
+    "domain": "FACILITY",
+    "title": "Verified collections by Unit Type",
+    "priority": "P1",
+    "definition": "Verified collections by Unit Type for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Facility Intelligence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "F25",
+    "domain": "FACILITY",
+    "title": "Current unpaid by Unit Type",
+    "priority": "P1",
+    "definition": "Current unpaid by Unit Type for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Facility Intelligence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "F26",
+    "domain": "FACILITY",
+    "title": "Overdue balance by Unit Type",
+    "priority": "P1",
+    "definition": "Overdue balance by Unit Type for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Facility Intelligence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "F27",
+    "domain": "FACILITY",
+    "title": "Distinct overdue Vendors per type",
+    "priority": "P1",
+    "definition": "Distinct overdue Vendors per type for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Facility Intelligence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "F28",
+    "domain": "FACILITY",
+    "title": "Vacancy opportunity value",
+    "priority": "P1",
+    "definition": "Vacancy opportunity value for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Facility Intelligence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "F29",
+    "domain": "FACILITY",
+    "title": "Rent rate distribution",
+    "priority": "P1",
+    "definition": "Rent rate distribution for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Facility Intelligence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "F30",
+    "domain": "FACILITY",
+    "title": "Partial-period liability",
+    "priority": "P1",
+    "definition": "Partial-period liability for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Facility Intelligence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "F31",
+    "domain": "FACILITY",
+    "title": "Invoice policy applicability",
+    "priority": "P2",
+    "definition": "Invoice policy applicability for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Facility Intelligence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "F32",
+    "domain": "FACILITY",
+    "title": "Facility-to-invoice attribution gaps",
+    "priority": "P2",
+    "definition": "Facility-to-invoice attribution gaps for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Facility Intelligence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "F33",
+    "domain": "FACILITY",
+    "title": "Revenue by Market section",
+    "priority": "P2",
+    "definition": "Revenue by Market section for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Facility Intelligence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "F34",
+    "domain": "FACILITY",
+    "title": "Maintenance work orders",
+    "priority": "P2",
+    "definition": "Maintenance work orders for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Facility Intelligence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "F35",
+    "domain": "FACILITY",
+    "title": "Facilities needing repair",
+    "priority": "P2",
+    "definition": "Facilities needing repair for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Facility Intelligence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "F36",
+    "domain": "FACILITY",
+    "title": "Accessibility and utility readiness",
+    "priority": "P2",
+    "definition": "Accessibility and utility readiness for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Facility Intelligence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "F37",
+    "domain": "FACILITY",
+    "title": "Gate/QR facility linkage",
+    "priority": "P2",
+    "definition": "Gate/QR facility linkage for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Facility Intelligence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "F38",
+    "domain": "FACILITY",
+    "title": "Physical inspection freshness",
+    "priority": "P2",
+    "definition": "Physical inspection freshness for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Facility Intelligence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "F39",
+    "domain": "FACILITY",
+    "title": "Duplicate Facility candidates",
+    "priority": "P2",
+    "definition": "Duplicate Facility candidates for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Facility Intelligence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "F40",
+    "domain": "FACILITY",
+    "title": "Shop image and document completeness",
+    "priority": "P2",
+    "definition": "Shop image and document completeness for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Facility Intelligence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "F41",
+    "domain": "FACILITY",
+    "title": "Facility data quality and provenance",
+    "priority": "P2",
+    "definition": "Facility data quality and provenance for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Facility Intelligence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S01",
+    "domain": "SUPPLIER",
+    "title": "Registered Supplier accounts",
+    "priority": "P1",
+    "definition": "Registered Supplier accounts for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S02",
+    "domain": "SUPPLIER",
+    "title": "Qualified Supplier identities",
+    "priority": "P1",
+    "definition": "Qualified Supplier identities for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S03",
+    "domain": "SUPPLIER",
+    "title": "Supplier KYC pending",
+    "priority": "P1",
+    "definition": "Supplier KYC pending for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S04",
+    "domain": "SUPPLIER",
+    "title": "Supplier approval awaiting review",
+    "priority": "P1",
+    "definition": "Supplier approval awaiting review for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S05",
+    "domain": "SUPPLIER",
+    "title": "Supplier suspension exceptions",
+    "priority": "P1",
+    "definition": "Supplier suspension exceptions for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S06",
+    "domain": "SUPPLIER",
+    "title": "Qualification document expiry",
+    "priority": "P1",
+    "definition": "Qualification document expiry for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S07",
+    "domain": "SUPPLIER",
+    "title": "Supplier onboarding duration",
+    "priority": "P1",
+    "definition": "Supplier onboarding duration for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S08",
+    "domain": "SUPPLIER",
+    "title": "Supplier capability categories",
+    "priority": "P1",
+    "definition": "Supplier capability categories for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S09",
+    "domain": "SUPPLIER",
+    "title": "Approved Market participation",
+    "priority": "P1",
+    "definition": "Approved Market participation for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S10",
+    "domain": "SUPPLIER",
+    "title": "Global versus Market eligibility",
+    "priority": "P1",
+    "definition": "Global versus Market eligibility for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S11",
+    "domain": "SUPPLIER",
+    "title": "Supplier category coverage by Market",
+    "priority": "P1",
+    "definition": "Supplier category coverage by Market for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S12",
+    "domain": "SUPPLIER",
+    "title": "Single-source Market categories",
+    "priority": "P1",
+    "definition": "Single-source Market categories for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S13",
+    "domain": "SUPPLIER",
+    "title": "Supplier discovery searches",
+    "priority": "P1",
+    "definition": "Supplier discovery searches for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S14",
+    "domain": "SUPPLIER",
+    "title": "Supplier geographic coverage",
+    "priority": "P1",
+    "definition": "Supplier geographic coverage for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S15",
+    "domain": "SUPPLIER",
+    "title": "Active requisitions",
+    "priority": "P1",
+    "definition": "Active requisitions for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S16",
+    "domain": "SUPPLIER",
+    "title": "Requisitions awaiting bids",
+    "priority": "P1",
+    "definition": "Requisitions awaiting bids for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S17",
+    "domain": "SUPPLIER",
+    "title": "Bid response rate",
+    "priority": "P1",
+    "definition": "Bid response rate for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S18",
+    "domain": "SUPPLIER",
+    "title": "Qualified bids submitted",
+    "priority": "P1",
+    "definition": "Qualified bids submitted for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S19",
+    "domain": "SUPPLIER",
+    "title": "Awards and bid decisions",
+    "priority": "P1",
+    "definition": "Awards and bid decisions for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S20",
+    "domain": "SUPPLIER",
+    "title": "Competition per requisition",
+    "priority": "P1",
+    "definition": "Competition per requisition for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S21",
+    "domain": "SUPPLIER",
+    "title": "Award-to-PO conversion",
+    "priority": "P1",
+    "definition": "Award-to-PO conversion for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S22",
+    "domain": "SUPPLIER",
+    "title": "Sourcing cycle time",
+    "priority": "P1",
+    "definition": "Sourcing cycle time for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S23",
+    "domain": "SUPPLIER",
+    "title": "Approved Purchase Orders",
+    "priority": "P1",
+    "definition": "Approved Purchase Orders for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S24",
+    "domain": "SUPPLIER",
+    "title": "Open PO commitment amount",
+    "priority": "P1",
+    "definition": "Open PO commitment amount for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S25",
+    "domain": "SUPPLIER",
+    "title": "PO approvals awaiting action",
+    "priority": "P1",
+    "definition": "PO approvals awaiting action for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S26",
+    "domain": "SUPPLIER",
+    "title": "PO line item revisions",
+    "priority": "P1",
+    "definition": "PO line item revisions for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S27",
+    "domain": "SUPPLIER",
+    "title": "PO delivery due soon",
+    "priority": "P1",
+    "definition": "PO delivery due soon for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S28",
+    "domain": "SUPPLIER",
+    "title": "PO cancellation and exception",
+    "priority": "P1",
+    "definition": "PO cancellation and exception for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S29",
+    "domain": "SUPPLIER",
+    "title": "PO vendor/supplier authorization",
+    "priority": "P1",
+    "definition": "PO vendor/supplier authorization for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S30",
+    "domain": "SUPPLIER",
+    "title": "Scheduled deliveries",
+    "priority": "P1",
+    "definition": "Scheduled deliveries for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S31",
+    "domain": "SUPPLIER",
+    "title": "Dispatches awaiting Gate",
+    "priority": "P2",
+    "definition": "Dispatches awaiting Gate for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S32",
+    "domain": "SUPPLIER",
+    "title": "Gate arrivals by Supplier",
+    "priority": "P2",
+    "definition": "Gate arrivals by Supplier for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S33",
+    "domain": "SUPPLIER",
+    "title": "Admission processing time",
+    "priority": "P2",
+    "definition": "Admission processing time for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S34",
+    "domain": "SUPPLIER",
+    "title": "Goods awaiting Stock verification",
+    "priority": "P2",
+    "definition": "Goods awaiting Stock verification for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S35",
+    "domain": "SUPPLIER",
+    "title": "Partial goods receipts",
+    "priority": "P2",
+    "definition": "Partial goods receipts for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S36",
+    "domain": "SUPPLIER",
+    "title": "Delivery quantity variance",
+    "priority": "P2",
+    "definition": "Delivery quantity variance for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S37",
+    "domain": "SUPPLIER",
+    "title": "Delivery on-time rate",
+    "priority": "P2",
+    "definition": "Delivery on-time rate for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S38",
+    "domain": "SUPPLIER",
+    "title": "On-time in-full sample coverage",
+    "priority": "P2",
+    "definition": "On-time in-full sample coverage for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S39",
+    "domain": "SUPPLIER",
+    "title": "Rejected or damaged quantities",
+    "priority": "P2",
+    "definition": "Rejected or damaged quantities for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S40",
+    "domain": "SUPPLIER",
+    "title": "Supplier invoices received",
+    "priority": "P2",
+    "definition": "Supplier invoices received for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S41",
+    "domain": "SUPPLIER",
+    "title": "Three-way match status",
+    "priority": "P2",
+    "definition": "Three-way match status for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S42",
+    "domain": "SUPPLIER",
+    "title": "Payables awaiting validation",
+    "priority": "P2",
+    "definition": "Payables awaiting validation for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S43",
+    "domain": "SUPPLIER",
+    "title": "Approved payable balance",
+    "priority": "P2",
+    "definition": "Approved payable balance for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S44",
+    "domain": "SUPPLIER",
+    "title": "Payments confirmed to Suppliers",
+    "priority": "P2",
+    "definition": "Payments confirmed to Suppliers for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S45",
+    "domain": "SUPPLIER",
+    "title": "Unverified payout sources",
+    "priority": "P2",
+    "definition": "Unverified payout sources for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S46",
+    "domain": "SUPPLIER",
+    "title": "Settlement reconciliation gaps",
+    "priority": "P2",
+    "definition": "Settlement reconciliation gaps for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S47",
+    "domain": "SUPPLIER",
+    "title": "VAT invoice evidence coverage",
+    "priority": "P2",
+    "definition": "VAT invoice evidence coverage for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S48",
+    "domain": "SUPPLIER",
+    "title": "PO-to-settlement lead time",
+    "priority": "P2",
+    "definition": "PO-to-settlement lead time for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S49",
+    "domain": "SUPPLIER",
+    "title": "Supplier delivery reliability",
+    "priority": "P2",
+    "definition": "Supplier delivery reliability for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S50",
+    "domain": "SUPPLIER",
+    "title": "Supplier quality score",
+    "priority": "P2",
+    "definition": "Supplier quality score for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S51",
+    "domain": "SUPPLIER",
+    "title": "Supplier dispute frequency",
+    "priority": "P2",
+    "definition": "Supplier dispute frequency for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S52",
+    "domain": "SUPPLIER",
+    "title": "Supplier capacity exposure",
+    "priority": "P2",
+    "definition": "Supplier capacity exposure for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S53",
+    "domain": "SUPPLIER",
+    "title": "Supplier concentration risk",
+    "priority": "P2",
+    "definition": "Supplier concentration risk for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S54",
+    "domain": "SUPPLIER",
+    "title": "Late supplier trends",
+    "priority": "P2",
+    "definition": "Late supplier trends for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S55",
+    "domain": "SUPPLIER",
+    "title": "Supplier performance sample confidence",
+    "priority": "P2",
+    "definition": "Supplier performance sample confidence for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S56",
+    "domain": "SUPPLIER",
+    "title": "Supplier access and scope violations",
+    "priority": "P2",
+    "definition": "Supplier access and scope violations for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "S57",
+    "domain": "SUPPLIER",
+    "title": "Supplier audit and provenance integrity",
+    "priority": "P2",
+    "definition": "Supplier audit and provenance integrity for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Supplier Overview",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "X01",
+    "domain": "CROSS_DOMAIN",
+    "title": "Approved Vendors without Facilities",
+    "priority": "P0",
+    "definition": "Approved Vendors without Facilities for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Cross-domain evidence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "X02",
+    "domain": "CROSS_DOMAIN",
+    "title": "Occupied units missing active Contracts",
+    "priority": "P0",
+    "definition": "Occupied units missing active Contracts for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Cross-domain evidence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "X03",
+    "domain": "CROSS_DOMAIN",
+    "title": "Contracted tenants without invoices",
+    "priority": "P0",
+    "definition": "Contracted tenants without invoices for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Cross-domain evidence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "X04",
+    "domain": "CROSS_DOMAIN",
+    "title": "Unit Type exclusive aging drill-down",
+    "priority": "P0",
+    "definition": "Unit Type exclusive aging drill-down for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Cross-domain evidence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "X05",
+    "domain": "CROSS_DOMAIN",
+    "title": "Vacant units with rental applications",
+    "priority": "P0",
+    "definition": "Vacant units with rental applications for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Cross-domain evidence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "X06",
+    "domain": "CROSS_DOMAIN",
+    "title": "Vendor applications awaiting allocation",
+    "priority": "P0",
+    "definition": "Vendor applications awaiting allocation for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Cross-domain evidence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "X07",
+    "domain": "CROSS_DOMAIN",
+    "title": "Payment-to-invoice reconciliation mismatch",
+    "priority": "P0",
+    "definition": "Payment-to-invoice reconciliation mismatch for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Cross-domain evidence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "X08",
+    "domain": "CROSS_DOMAIN",
+    "title": "Credited invoices with held sources",
+    "priority": "P0",
+    "definition": "Credited invoices with held sources for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Cross-domain evidence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "X09",
+    "domain": "CROSS_DOMAIN",
+    "title": "Unknown financial provenance",
+    "priority": "P0",
+    "definition": "Unknown financial provenance for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Cross-domain evidence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "X10",
+    "domain": "CROSS_DOMAIN",
+    "title": "Supplier awards lacking canonical POs",
+    "priority": "P0",
+    "definition": "Supplier awards lacking canonical POs for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Cross-domain evidence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "X11",
+    "domain": "CROSS_DOMAIN",
+    "title": "POs delayed before dispatch",
+    "priority": "P0",
+    "definition": "POs delayed before dispatch for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Cross-domain evidence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "X12",
+    "domain": "CROSS_DOMAIN",
+    "title": "Gate arrivals without Stock receipts",
+    "priority": "P0",
+    "definition": "Gate arrivals without Stock receipts for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Cross-domain evidence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "X13",
+    "domain": "CROSS_DOMAIN",
+    "title": "Stock receipts without PO match",
+    "priority": "P1",
+    "definition": "Stock receipts without PO match for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Cross-domain evidence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "X14",
+    "domain": "CROSS_DOMAIN",
+    "title": "Custody quantity differences",
+    "priority": "P1",
+    "definition": "Custody quantity differences for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Cross-domain evidence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "X15",
+    "domain": "CROSS_DOMAIN",
+    "title": "Unreconciled tax evidence",
+    "priority": "P1",
+    "definition": "Unreconciled tax evidence for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Cross-domain evidence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "X16",
+    "domain": "CROSS_DOMAIN",
+    "title": "Market readiness index",
+    "priority": "P1",
+    "definition": "Market readiness index for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Cross-domain evidence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "X17",
+    "domain": "CROSS_DOMAIN",
+    "title": "Unassigned administrative requests",
+    "priority": "P1",
+    "definition": "Unassigned administrative requests for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Cross-domain evidence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "X18",
+    "domain": "CROSS_DOMAIN",
+    "title": "Overdue review SLA",
+    "priority": "P1",
+    "definition": "Overdue review SLA for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Cross-domain evidence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "X19",
+    "domain": "CROSS_DOMAIN",
+    "title": "Support ticket aging",
+    "priority": "P1",
+    "definition": "Support ticket aging for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Cross-domain evidence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "X20",
+    "domain": "CROSS_DOMAIN",
+    "title": "Vendor import promotion conflicts",
+    "priority": "P1",
+    "definition": "Vendor import promotion conflicts for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Cross-domain evidence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "X21",
+    "domain": "CROSS_DOMAIN",
+    "title": "Cross-Market permission conflicts",
+    "priority": "P1",
+    "definition": "Cross-Market permission conflicts for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Cross-domain evidence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "X22",
+    "domain": "CROSS_DOMAIN",
+    "title": "Fiscal reference/receipt mismatch",
+    "priority": "P1",
+    "definition": "Fiscal reference/receipt mismatch for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Cross-domain evidence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "X23",
+    "domain": "CROSS_DOMAIN",
+    "title": "MarketMaster coverage gaps",
+    "priority": "P1",
+    "definition": "MarketMaster coverage gaps for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Cross-domain evidence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "X24",
+    "domain": "CROSS_DOMAIN",
+    "title": "System evidence freshness",
+    "priority": "P1",
+    "definition": "System evidence freshness for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Cross-domain evidence",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "A01",
+    "domain": "STAFF",
+    "title": "Active staff by role",
+    "priority": "P0",
+    "definition": "Active staff by role for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Staff & Access",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "A02",
+    "domain": "STAFF",
+    "title": "MarketMaster assignment coverage",
+    "priority": "P0",
+    "definition": "MarketMaster assignment coverage for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Staff & Access",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "A03",
+    "domain": "STAFF",
+    "title": "Unassigned Markets",
+    "priority": "P0",
+    "definition": "Unassigned Markets for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Staff & Access",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "A04",
+    "domain": "STAFF",
+    "title": "Pending staff invitations",
+    "priority": "P0",
+    "definition": "Pending staff invitations for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Staff & Access",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "A05",
+    "domain": "STAFF",
+    "title": "Read-only or temporary grants",
+    "priority": "P0",
+    "definition": "Read-only or temporary grants for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Staff & Access",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "A06",
+    "domain": "STAFF",
+    "title": "Effective permission conflicts",
+    "priority": "P0",
+    "definition": "Effective permission conflicts for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Staff & Access",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "A07",
+    "domain": "STAFF",
+    "title": "Gate Staff shift coverage",
+    "priority": "P1",
+    "definition": "Gate Staff shift coverage for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Staff & Access",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "A08",
+    "domain": "STAFF",
+    "title": "Stock Counter staffing gaps",
+    "priority": "P1",
+    "definition": "Stock Counter staffing gaps for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Staff & Access",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "A09",
+    "domain": "STAFF",
+    "title": "Assigned case workload",
+    "priority": "P1",
+    "definition": "Assigned case workload for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "API_VALIDATION_REQUIRED",
+    "drilldown": "Staff & Access",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "A10",
+    "domain": "STAFF",
+    "title": "Overdue cases by assignee",
+    "priority": "P1",
+    "definition": "Overdue cases by assignee for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Staff & Access",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "A11",
+    "domain": "STAFF",
+    "title": "Administrative decision throughput",
+    "priority": "P1",
+    "definition": "Administrative decision throughput for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Staff & Access",
+    "source": "Demo specification; not a certified live API metric"
+  },
+  {
+    "id": "A12",
+    "domain": "STAFF",
+    "title": "Privileged action audit events",
+    "priority": "P1",
+    "definition": "Privileged action audit events for the authorized Market and applicable reporting period; distinct population and evidence source must be defined before production use.",
+    "maturity": "DESIGN_SPEC",
+    "drilldown": "Staff & Access",
+    "source": "Demo specification; not a certified live API metric"
+  }
+]
